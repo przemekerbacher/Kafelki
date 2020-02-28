@@ -47,3 +47,11 @@
 		outline: 0;
 	}
 }
+
+#expand-button {
+	transition: transform .3s;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
