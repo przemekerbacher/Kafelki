@@ -1,0 +1,49 @@
+.product-item {
+	img {
+		border-radius: 50%;
+		margin-bottom: 5rem;
+	}
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1rem;
+	box-shadow: -6px 6px 10px 4px $color-red-dark;
+	margin-bottom: 1rem;
+	background: #e9242d;
+	color: white;
+}
+
+.product-price {
+	font-family: $decorative-font;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.product-name {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: $decorative-font;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.product-calories {
+	padding: 0;
+	font-family: $nomal-font;
+	text-transform: uppercase;
+}
+
+.product-alergens {
+	button {
+		background-color: transparent;
+		border: none;
+		font-size: 2rem;
+		color: $color-red-dark;
+		line-height: 0;
+		outline: 0;
+	}
+}
