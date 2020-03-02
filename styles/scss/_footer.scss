@@ -12,4 +12,12 @@ footer {
 	a:hover {
 		color: #ddd;
 	}
+
+	svg {
+		margin-right: 1rem;
+	}
+
+	.container>* {
+		margin-bottom: 2rem;
+	}
 }

@@ -1,0 +1,23 @@
+@mixin closeButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 2rem;
+	cursor: pointer;
+
+
+	&:hover {
+		color: $color-red-dark;
+	}
+
+}
+
+@mixin hidden {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 30vw;
+	background-color: $color-red;
+	color: white;
+	z-index: 1;
+}

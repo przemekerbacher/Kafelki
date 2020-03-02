@@ -1,0 +1,38 @@
+.order {
+	@include hidden;
+	right: 100%;
+	box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+	transition: right 0.7s;
+}
+
+.order.active {
+	animation: move-from-right $animation-move-in-out;
+}
+
+.order.disabled {
+	animation: move-out-from-left $animation-move-in-out;
+}
+
+.close-order {
+	@include closeButton;
+}
+
+@keyframes move-from-right {
+	from {
+		right: -100%;
+	}
+
+	to {
+		right: 0;
+	}
+}
+
+@keyframes move-out-from-left {
+	from {
+		right: 0%;
+	}
+
+	to {
+		right: -100%;
+	}
+}

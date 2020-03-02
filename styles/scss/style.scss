@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 @import 'nav';
 @import "header";
 @import 'main';
@@ -6,6 +7,8 @@
 @import 'buttons';
 @import 'hidden-menu';
 @import 'media';
+@import 'order';
+
 
 html {
 	scroll-behavior: smooth;

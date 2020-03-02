@@ -166,6 +166,14 @@ footer a:hover {
   color: #ddd;
 }
 
+footer svg {
+  margin-right: 1rem;
+}
+
+footer .container > * {
+  margin-bottom: 2rem;
+}
+
 .basket,
 .menu {
   position: fixed;
@@ -198,19 +206,21 @@ footer a:hover {
 }
 
 .basket:hover,
-.menu {
+.menu:hover {
   background-color: #e9242d;
 }
 
 .hidden-menu {
   position: fixed;
   top: 0;
-  left: -100%;
   height: 100vh;
-  width: 50vw;
+  width: 30vw;
   background-color: #e9242d;
   color: white;
   z-index: 1;
+  left: -100%;
+  -webkit-box-shadow: 12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 12px 0px 17px 0px rgba(0, 0, 0, 0.75);
   -webkit-transition: left 0.7s;
   transition: left 0.7s;
 }
@@ -251,8 +261,14 @@ footer a:hover {
   color: #e9242d;
 }
 
-.hidden-menu .active {
-  left: 0;
+.hidden-menu.active {
+  -webkit-animation: move-from-left 1s both;
+          animation: move-from-left 1s both;
+}
+
+.hidden-menu.disabled {
+  -webkit-animation: move-out-from-right 1s both;
+          animation: move-out-from-right 1s both;
 }
 
 .close-hidden-menu {
@@ -265,6 +281,42 @@ footer a:hover {
 
 .close-hidden-menu:hover {
   color: rgba(0, 0, 0, 0.12);
+}
+
+@-webkit-keyframes move-from-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes move-from-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes move-out-from-right {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes move-out-from-right {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
 }
 
 @media (max-height: 450px) {
@@ -283,8 +335,88 @@ footer a:hover {
   main h2 {
     font-size: 2rem !important;
   }
-  .hidden-menu {
+  .hidden-menu,
+  .order.active {
     width: 100vw;
+  }
+}
+
+@media (max-height: 640px) {
+  footer {
+    height: 100vh;
+  }
+}
+
+.order {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 30vw;
+  background-color: #e9242d;
+  color: white;
+  z-index: 1;
+  right: 100%;
+  -webkit-box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: right 0.7s;
+  transition: right 0.7s;
+}
+
+.order.active {
+  -webkit-animation: move-from-right 1s both;
+          animation: move-from-right 1s both;
+}
+
+.order.disabled {
+  -webkit-animation: move-out-from-left 1s both;
+          animation: move-out-from-left 1s both;
+}
+
+.close-order {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-order:hover {
+  color: rgba(0, 0, 0, 0.12);
+}
+
+@-webkit-keyframes move-from-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes move-from-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes move-out-from-left {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+@keyframes move-out-from-left {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
   }
 }
 

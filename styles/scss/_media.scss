@@ -23,7 +23,14 @@
 		}
 	}
 
-	.hidden-menu {
+	.hidden-menu,
+	.order.active {
 		width: 100vw;
+	}
+}
+
+@media (max-height: 640px) {
+	footer {
+		height: 100vh;
 	}
 }

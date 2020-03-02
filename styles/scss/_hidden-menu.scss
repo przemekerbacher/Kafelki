@@ -1,12 +1,7 @@
 .hidden-menu {
-	position: fixed;
-	top: 0;
+	@include hidden;
 	left: -100%;
-	height: 100vh;
-	width: 50vw;
-	background-color: $color-red;
-	color: white;
-	z-index: 1;
+	box-shadow: 12px 0px 17px 0px rgba(0, 0, 0, 0.75);
 	transition: left 0.7s;
 
 	ul {
@@ -39,18 +34,34 @@
 	}
 }
 
-.hidden-menu .active {
-	left: 0;
+.hidden-menu.active {
+	animation: move-from-left $animation-move-in-out;
+}
+
+.hidden-menu.disabled {
+	animation: move-out-from-right $animation-move-in-out;
 }
 
 .close-hidden-menu {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 2rem;
-	cursor: pointer;
+	@include closeButton;
+}
 
-	&:hover {
-		color: $color-red-dark;
+@keyframes move-from-left {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 0;
+	}
+}
+
+@keyframes move-out-from-right {
+	from {
+		left: 0%;
+	}
+
+	to {
+		left: -100%;
 	}
 }
