@@ -1,5 +1,15 @@
 @import 'variables';
-@import 'product';
+@import 'nav';
+@import "header";
+@import 'main';
+@import 'footer';
+@import 'buttons';
+@import 'hidden-menu';
+@import 'media';
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	height: 100vh;

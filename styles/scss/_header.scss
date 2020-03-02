@@ -1,0 +1,22 @@
+.header {
+	background-image: $background-image-url;
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	div.jumbotron .jumbotron-fluid {
+		margin: 0;
+	}
+
+	a:hover {
+		color: $color-red !important;
+		box-shadow: 0px 0px 10px 0px $color-red-dark;
+		border-radius: 50%;
+		transition: color .5s, box-shadow .5s;
+	}
+}

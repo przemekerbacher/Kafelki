@@ -1,0 +1,29 @@
+@media (max-height: 450px) {
+	.header {
+		a {
+			font-size: 4rem;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.header {
+		a {
+			font-size: 4rem;
+		}
+	}
+
+	main {
+		h1 {
+			font-size: 3rem !important;
+		}
+
+		h2 {
+			font-size: 2rem !important;
+		}
+	}
+
+	.hidden-menu {
+		width: 100vw;
+	}
+}

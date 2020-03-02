@@ -1,0 +1,15 @@
+footer {
+	background-image: $background-image-url;
+	background-size: cover;
+	background-attachment: fixed;
+
+	color: white;
+
+	a {
+		color: white !important;
+	}
+
+	a:hover {
+		color: #ddd;
+	}
+}

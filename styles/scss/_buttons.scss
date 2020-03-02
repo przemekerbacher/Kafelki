@@ -1,0 +1,29 @@
+.basket,
+.menu {
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	color: white;
+	background-color: $color-red-dark;
+	border-radius: 5px;
+	height: 100px;
+	width: 100px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.basket {
+	right: 0;
+}
+
+.menu {
+	left: 0;
+}
+
+.basket:hover,
+.menu {
+	background-color: $color-red;
+}

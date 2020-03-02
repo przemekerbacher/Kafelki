@@ -1,0 +1,22 @@
+nav.main-navigation {
+	top: 0;
+	left: 0;
+	color: white;
+	position: absolute;
+	background-color: transparent;
+	width: 100%;
+
+	svg {
+		color: white;
+	}
+
+	ul {
+		cursor: pointer;
+	}
+
+	li {
+		&:hover {
+			color: #ddd;
+		}
+	}
+}
