@@ -11,8 +11,8 @@
 
 	.logo {
 		background-color: rgb(20, 110, 45);
-		border: solid 2px rgb(179, 9, 8);
-		padding: 10px;
+		border: solid 8px rgb(179, 9, 8);
+		padding: 30px;
 
 		img {
 			height: 50vh;
@@ -30,8 +30,8 @@
 
 	a:hover {
 		color: $color-primary !important;
-		box-shadow: 0px 0px 10px 0px $color-red-dark;
+		box-shadow: 0px 0px 10px 0px $color-primary;
 		border-radius: 50%;
-		transition: color .5s, box-shadow .5s;
+		transition: color .5s, box-shadow .5s linear;
 	}
 }

@@ -3,7 +3,6 @@ nav.main-navigation {
   top: 0;
   left: 0;
   color: white;
-  position: absolute;
   background-color: transparent;
   width: 100%;
 }
@@ -43,8 +42,8 @@ nav.main-navigation li:hover {
 
 .header .logo {
   background-color: #146e2d;
-  border: solid 2px #b30908;
-  padding: 10px;
+  border: solid 8px #b30908;
+  padding: 30px;
 }
 
 .header .logo img {
@@ -62,13 +61,13 @@ nav.main-navigation li:hover {
 
 .header a:hover {
   color: #146e2d !important;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 10px 0px #146e2d;
+          box-shadow: 0px 0px 10px 0px #146e2d;
   border-radius: 50%;
-  -webkit-transition: color .5s, -webkit-box-shadow .5s;
-  transition: color .5s, -webkit-box-shadow .5s;
-  transition: color .5s, box-shadow .5s;
-  transition: color .5s, box-shadow .5s, -webkit-box-shadow .5s;
+  -webkit-transition: color .5s, -webkit-box-shadow .5s linear;
+  transition: color .5s, -webkit-box-shadow .5s linear;
+  transition: color .5s, box-shadow .5s linear;
+  transition: color .5s, box-shadow .5s linear, -webkit-box-shadow .5s linear;
 }
 
 main {
@@ -335,12 +334,6 @@ footer .container > * {
   }
 }
 
-@media (max-height: 450px) {
-  .header a {
-    font-size: 4rem;
-  }
-}
-
 @media (max-width: 1000px) {
   .header a {
     font-size: 4rem;
@@ -375,6 +368,10 @@ footer .container > * {
   }
   main h2 {
     font-size: 2rem;
+  }
+  .header .logo img {
+    height: 30vh;
+    width: 30vh;
   }
 }
 
