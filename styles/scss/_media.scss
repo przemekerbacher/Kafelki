@@ -13,6 +13,9 @@
 		}
 	}
 
+	.hidden-menu a {
+		font-size: 1rem;
+	}
 
 	.hidden-menu,
 	.order.active {
@@ -20,27 +23,12 @@
 	}
 }
 
-@media (max-height: 500px) {
-	.header {
-		.container {
-			display: flex;
-			justify-content: space-around;
-
-			img {
-				display: none;
-			}
-
-			a {
-				font-size: 3rem;
-			}
-		}
-
-	}
-}
-
 @media (max-height: 640px) {
 	footer {
 		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 

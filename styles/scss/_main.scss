@@ -1,21 +1,11 @@
 main {
+	color: $color-primary;
+
 	h1 {
 		font-family: $decorative-font;
-		color: $text-color;
 	}
 
-	h2 {
-		color: $text-color;
-	}
-
-	#products-scroll-spy {
-		background-color: $color-red;
-		width: 100%;
-
-		a {
-			color: white;
-		}
-	}
+	h2 {}
 
 	.products {
 		scroll-behavior: smooth;
@@ -41,10 +31,8 @@ main {
 		padding: 1rem 1rem;
 		box-shadow: -6px 6px 10px 4px $color-red-dark;
 		margin-bottom: 1rem;
-		background: $color-red;
-		color: $text-color;
-
-
+		background: $color-background;
+		color: $color-secondary
 	}
 
 	.product-price {

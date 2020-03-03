@@ -1,6 +1,6 @@
 .hidden-menu {
 	@include hidden;
-	left: -100%;
+	left: -200%;
 	box-shadow: 12px 0px 17px 0px rgba(0, 0, 0, 0.75);
 	transition: left 0.7s;
 
@@ -29,7 +29,7 @@
 
 	a:hover {
 		background-color: $text-color;
-		color: $color-red;
+		color: $color-background;
 	}
 }
 
