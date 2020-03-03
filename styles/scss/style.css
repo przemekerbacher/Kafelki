@@ -21,7 +21,7 @@ nav.main-navigation li:hover {
 }
 
 .header {
-  background-image: url("/images/background-image.jpg");
+  background-image: url("images/background-image.jpg");
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
@@ -170,7 +170,7 @@ main #products-scroll-spy {
 }
 
 footer {
-  background-image: url("/images/background-image.jpg");
+  background-image: url("images/background-image.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: white;
