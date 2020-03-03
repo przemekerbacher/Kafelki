@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.navbar-icon {
+			width: 60px;
+			height: 45px;
+			position: relative;
+			transform: rotate(0deg);
+			cursor: pointer;
+		}
+
+		.navbar-icon span {
+			display: block;
+			position: absolute;
+			height: 9px;
+			width: 100%;
+			background-color: #d3531a;
+			border-radius: 9px;
+			left: 0;
+		}
+
+		.navbar-icon span:nth-child(1) {
+			top: 0px;
+		}
+
+		.navbar-icon span:nth-child(2) {
+			top: 18px;
+		}
+
+		.navbar-icon span:nth-child(3) {
+			top: 36px;
+		}
+
+		.navbar-icon.active span {
+			animation: hide .5s ease-in both;
+		}
+
+		.navbar-icon.active span:nth-child(1) {
+			animation: show-top .5s ease-in both;
+		}
+
+		.navbar-icon.active span:nth-child(3) {
+			animation: show-bottom .5s ease-in both;
+		}
+
+		@keyframes hide {
+			from {
+				opacity: 1;
+			}
+
+			to {
+				opacity: 0;
+			}
+		}
+
+		@keyframes show-top {
+			from {
+				top: 0px;
+				opacity: 0;
+				transform: rotate(0deg);
+			}
+
+			to {
+				top: 18px;
+				opacity: 1;
+				transform: rotate(45deg);
+			}
+		}
+
+		@keyframes show-bottom {
+			from {
+				top: 36px;
+				opacity: 36;
+
+			}
+
+			to {
+				top: 18px;
+				opacity: 1;
+				transform: rotate(-45deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<script>
+		var navbarIcon = document.querySelector(".navbar-icon");
+		navbarIcon.addEventListener('click', function () {
+			navbarIcon.classList.toggle('active');
+		})
+	</script>
+</body>
+</body>
+</body>
+
+</html>
