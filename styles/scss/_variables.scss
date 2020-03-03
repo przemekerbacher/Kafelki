@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat&display=swap&subset=latin-ext');
 $decorative-font: 'Fjalla One',
 sans-serif;
-$nomal-font: 'Montserrata',
+$normal-font: 'Montserrat',
 sans-serif;
-$text-color: #fff;
-$color-orange: rgba(255, 152, 42, 1);
-$color-red: #e9242d;
+// $text-color: #fff;
+$text-color: #544c4c;
+// $color-red: #e9242d;
+$color-red: rgb(239, 238, 234);
 $color-red-dark: rgba(0, 0, 0, .12);
-$handwritting-font: "Just Me Again Down Here",
-sans-serif;
 $background-image-url: url("/images/background-image.jpg");
 $animation-move-in-out: 1s both;

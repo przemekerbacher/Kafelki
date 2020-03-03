@@ -6,22 +6,13 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
 	.header {
 		a {
 			font-size: 4rem;
 		}
 	}
 
-	main {
-		h1 {
-			font-size: 3rem !important;
-		}
-
-		h2 {
-			font-size: 2rem !important;
-		}
-	}
 
 	.hidden-menu,
 	.order.active {
@@ -29,8 +20,38 @@
 	}
 }
 
+@media (max-height: 500px) {
+	.header {
+		.container {
+			display: flex;
+			justify-content: space-around;
+
+			img {
+				display: none;
+			}
+
+			a {
+				font-size: 3rem;
+			}
+		}
+
+	}
+}
+
 @media (max-height: 640px) {
 	footer {
 		height: 100vh;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		h1 {
+			font-size: 3rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
 	}
 }

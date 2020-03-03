@@ -2,7 +2,32 @@
 	@include hidden;
 	right: 100%;
 	box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-	transition: right 0.7s;
+	color: $text-color;
+
+	.order-header {
+		text-align: center;
+
+		h2 {
+			text-transform: uppercase;
+			font-family: $normal-font;
+		}
+	}
+
+	.order-item {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+		button {
+			background-color: $color-red-dark;
+			color: $text-color;
+			border-style: none;
+		}
+	}
+
+	.order-footer {
+		.summary-final {
+			font-weight: bold;
+		}
+	}
 }
 
 .order.active {
@@ -15,6 +40,10 @@
 
 .close-order {
 	@include closeButton;
+}
+
+.order-footer {
+	background-color: $color-red-dark;
 }
 
 @keyframes move-from-right {

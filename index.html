@@ -7,10 +7,6 @@
 	<title>Demo's Pizzos</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One&display=swap&subset=latin-ext"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Just+Me+Again+Down+Here|Pacifico&display=swap"
-		rel="stylesheet" />
 	<link rel="stylesheet" href="/styles/css/style.min.css">
 </head>
 
@@ -21,7 +17,7 @@
 	<div class="menu">
 		<i class="fas fa-hamburger"></i>
 	</div>
-	<div class="hidden-menu">
+	<div class="hidden-menu text-center">
 		<div class="close-hidden-menu p-4">
 			<i class="fas fa-times-circle"></i>
 		</div>
@@ -34,9 +30,46 @@
 			<li><a href="#">Zapiekanki</a></li>
 		</ul>
 	</div>
-	<div class="order">
+	<div class="order py-5">
 		<div class="close-order p-4">
 			<i class="fas fa-times-circle"></i>
+		</div>
+		<div class="order-header">
+			<h2>Twoje zamówienie</h2>
+			<button class="order-pay-button btn btn-danger">Przejdź do płatności</button>
+		</div>
+		<div class="order-body">
+			<div class="order-item d-flex align-items-center p-2">
+				<div class="order-item-details col-6">
+					<p class="order-item-name m-0">Margherita</p>
+					<p class="order-item-ingredient small m-0">sos pomidorowy, ser</p>
+				</div>
+				<div class="product-item-edit col-4">
+					<button class="order-item-edit"><i class="far fa-edit"></i></button>
+					<button class="order-item-delete"><i class="fas fa-times-circle"></i></button>
+				</div>
+				<p class="product-item-price col-2">
+					30,00 zł
+				</p>
+			</div>
+			<div class="order-item d-flex align-items-center p-2">
+				<div class="order-item-details col-6">
+					<p class="order-item-name m-0">Rita</p>
+					<p class="order-item-ingredient small m-0">sos pomidorowy, ser, pieczarki, szynka</p>
+				</div>
+				<div class="product-item-edit col-4">
+					<button class="order-item-edit"><i class="far fa-edit"></i></button>
+					<button class="order-item-delete"><i class="fas fa-times-circle"></i></button>
+				</div>
+				<p class="product-item-price col-2">
+					62,99 zł
+				</p>
+
+			</div>
+		</div>
+		<div class="order-footer text-right py-1 px-5">
+			<p class="summary d-block">Razem: <span class="order-value">62,99 zł</span></p>
+			<p class="summary-final d-block">Razem do zapłaty: <span class="order-value">62,99 zł</span></p>
 		</div>
 	</div>
 	<nav class="main-navigation navbar navbar-expand-lg navbar-light position-absolute">
@@ -59,7 +92,7 @@
 	<!-- header -->
 	<div class="jumbotron jumbotron-fluid header text-white text-center">
 		<div class="container d-flex flex-column align-items-center">
-			<img class="w-50 w-sm-25 mb-5" src="/images/pizza-logo.png" alt="pizza-logo" />
+			<img class="img-fluid mb-5" src="/images/pizza-logo.png" alt="pizza-logo" />
 			<a href="#menu" class="d-flex flex-column align-items-center text-white display-1"><i
 					class="fas fa-arrow-circle-down"></i></a>
 		</div>
@@ -68,9 +101,15 @@
 	</div>
 	<!-- main -->
 	<main id="menu" class="wrap d-flex justify-content-center container flex-column">
+		<div class="text-center">
+			<h1 class="display-1 w-100">Menu
+			</h1>
+			<img class="w-50" src="/images/down-hand-drawn-scribble.png" alt="scribble">
+
+		</div>
 		<div class="products w-100" data-spy="scroll" data-target="#products-scroll-spy" data-offset="0">
 			<div id="pizza" class="pizza row">
-				<h2 class="col-12 display-3 text-white">Pizza</h2>
+				<h2 class="col-12 display-3">Pizza</h2>
 				<div class="product-wrap col-md-6 col-lg-4 p-3">
 					<div class="product-item rounded">
 						<img class="product-image img-thumbnail w-75" src="/images/pizza-rounded.jpg"
@@ -106,7 +145,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -119,9 +158,9 @@
 							alt="produt-image">
 						<div class="product-info w-100 pt-1 text-color row align-items-center row">
 
-							<p class="col-6 product-name ">margherita</p>
+							<p class="col-6 product-name ">rita</p>
 							<div class="col-6">
-								<span class="product-price d-block text-right">30.00 zł</span>
+								<span class="product-price d-block text-right">32.99 zł</span>
 							</div>
 						</div>
 						<div class="product-ingredients w-100">
@@ -148,7 +187,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -191,7 +230,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -234,7 +273,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -277,7 +316,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -319,7 +358,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -328,7 +367,7 @@
 				</div>
 			</div>
 			<div id="drinks" class="pizza row">
-				<h2 class="col-12 display-3 text-white">Drinki</h2>
+				<h2 class="col-12 display-3">Drinki</h2>
 				<div class="product-wrap col-md-6 col-lg-4 p-3">
 					<div class="product-item rounded">
 						<img class="product-image img-thumbnail w-75" src="/images/pizza-rounded.jpg"
@@ -364,7 +403,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -406,7 +445,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -449,7 +488,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -492,7 +531,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -535,7 +574,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>
@@ -577,7 +616,7 @@
 							</p>
 						</div>
 						<div class="w-100 text-right">
-							<button class="btn btn-outline-light btn-lg mb-3">
+							<button class="product-buy-button mb-3">
 								<i class="fas fa-cart-plus"></i>
 							</button>
 						</div>

@@ -1,6 +1,11 @@
 main {
 	h1 {
 		font-family: $decorative-font;
+		color: $text-color;
+	}
+
+	h2 {
+		color: $text-color;
 	}
 
 	#products-scroll-spy {
@@ -22,6 +27,13 @@ main {
 			margin-bottom: 5rem;
 		}
 
+		button {
+			padding: 10 20px;
+			background-color: transparent;
+			border: solid 1px black;
+			border-radius: 5px;
+		}
+
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -31,6 +43,8 @@ main {
 		margin-bottom: 1rem;
 		background: $color-red;
 		color: $text-color;
+
+
 	}
 
 	.product-price {
@@ -51,7 +65,7 @@ main {
 
 	.product-calories {
 		padding: 0;
-		font-family: $nomal-font;
+		font-family: $normal-font;
 		text-transform: uppercase;
 	}
 

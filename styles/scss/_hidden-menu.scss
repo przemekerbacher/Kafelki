@@ -11,7 +11,6 @@
 		height: 100%;
 		font-size: 2rem;
 		list-style: none;
-		text-align: right;
 		padding: 0;
 	}
 
@@ -21,15 +20,15 @@
 
 	a {
 		display: block;
-		color: white;
 		width: 100%;
 		text-decoration: none;
 		padding: 10px 20px;
 		cursor: pointer;
+		color: $text-color;
 	}
 
 	a:hover {
-		background-color: white;
+		background-color: $text-color;
 		color: $color-red;
 	}
 }

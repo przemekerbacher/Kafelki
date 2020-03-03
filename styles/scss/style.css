@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat&display=swap&subset=latin-ext");
 nav.main-navigation {
   top: 0;
   left: 0;
@@ -45,7 +46,7 @@ nav.main-navigation li:hover {
 }
 
 .header a:hover {
-  color: #e9242d !important;
+  color: #efeeea !important;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
   border-radius: 50%;
@@ -57,10 +58,15 @@ nav.main-navigation li:hover {
 
 main h1 {
   font-family: "Fjalla One", sans-serif;
+  color: #544c4c;
+}
+
+main h2 {
+  color: #544c4c;
 }
 
 main #products-scroll-spy {
-  background-color: #e9242d;
+  background-color: #efeeea;
   width: 100%;
 }
 
@@ -90,13 +96,20 @@ main .product-item {
   -webkit-box-shadow: -6px 6px 10px 4px rgba(0, 0, 0, 0.12);
           box-shadow: -6px 6px 10px 4px rgba(0, 0, 0, 0.12);
   margin-bottom: 1rem;
-  background: #e9242d;
-  color: #fff;
+  background: #efeeea;
+  color: #544c4c;
 }
 
 main .product-item img {
   border-radius: 50%;
   margin-bottom: 5rem;
+}
+
+main .product-item button {
+  padding: 10 20px;
+  background-color: transparent;
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 main .product-price {
@@ -117,7 +130,7 @@ main .product-name {
 
 main .product-calories {
   padding: 0;
-  font-family: "Montserrata", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
@@ -207,7 +220,7 @@ footer .container > * {
 
 .basket:hover,
 .menu:hover {
-  background-color: #e9242d;
+  background-color: #efeeea;
 }
 
 .hidden-menu {
@@ -215,7 +228,7 @@ footer .container > * {
   top: 0;
   height: 100vh;
   width: 30vw;
-  background-color: #e9242d;
+  background-color: #efeeea;
   color: white;
   z-index: 1;
   left: -100%;
@@ -239,7 +252,6 @@ footer .container > * {
   height: 100%;
   font-size: 2rem;
   list-style: none;
-  text-align: right;
   padding: 0;
 }
 
@@ -249,16 +261,16 @@ footer .container > * {
 
 .hidden-menu a {
   display: block;
-  color: white;
   width: 100%;
   text-decoration: none;
   padding: 10px 20px;
   cursor: pointer;
+  color: #544c4c;
 }
 
 .hidden-menu a:hover {
-  background-color: white;
-  color: #e9242d;
+  background-color: #544c4c;
+  color: #efeeea;
 }
 
 .hidden-menu.active {
@@ -325,19 +337,29 @@ footer .container > * {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
   .header a {
     font-size: 4rem;
-  }
-  main h1 {
-    font-size: 3rem !important;
-  }
-  main h2 {
-    font-size: 2rem !important;
   }
   .hidden-menu,
   .order.active {
     width: 100vw;
+  }
+}
+
+@media (max-height: 500px) {
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header .container img {
+    display: none;
+  }
+  .header .container a {
+    font-size: 3rem;
   }
 }
 
@@ -347,19 +369,50 @@ footer .container > * {
   }
 }
 
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 3rem;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+}
+
 .order {
   position: fixed;
   top: 0;
   height: 100vh;
   width: 30vw;
-  background-color: #e9242d;
+  background-color: #efeeea;
   color: white;
   z-index: 1;
   right: 100%;
   -webkit-box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
           box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  -webkit-transition: right 0.7s;
-  transition: right 0.7s;
+  color: #544c4c;
+}
+
+.order .order-header {
+  text-align: center;
+}
+
+.order .order-header h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.order .order-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.order .order-item button {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: #544c4c;
+  border-style: none;
+}
+
+.order .order-footer .summary-final {
+  font-weight: bold;
 }
 
 .order.active {
@@ -382,6 +435,10 @@ footer .container > * {
 
 .close-order:hover {
   color: rgba(0, 0, 0, 0.12);
+}
+
+.order-footer {
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 @-webkit-keyframes move-from-right {
@@ -422,10 +479,11 @@ footer .container > * {
 
 html {
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   height: 100vh;
-  background-color: #e9242d;
+  background-color: #efeeea;
 }
 /*# sourceMappingURL=style.css.map */
