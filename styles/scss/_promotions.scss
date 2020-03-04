@@ -1,0 +1,19 @@
+.promotions {
+	margin: 200px 0;
+
+	.promoiton-image-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		max-height: 800px;
+	}
+
+	.gray {
+		position: absolute;
+		background-color: rgba(0, 0, 0, .5);
+		height: 100%;
+		width: 100%;
+	}
+}

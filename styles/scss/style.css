@@ -69,7 +69,7 @@ nav.main-navigation li:hover {
 }
 
 .features {
-  padding: 200px 0;
+  margin: 200px 0;
 }
 
 .features .feature {
@@ -273,6 +273,55 @@ footer .container > * {
   background-color: #b30908;
 }
 
+.close-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.close-icon span {
+  position: absolute;
+  top: 18px;
+  left: 4.5px;
+  height: 9px;
+  width: 36px;
+  background: black;
+  border-radius: 5px;
+}
+
+.close-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.close-icon span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+.close-icon.active span:nth-child(1) {
+  -webkit-transform: rotate(960deg) scale(0.1);
+          transform: rotate(960deg) scale(0.1);
+  opacity: 0;
+}
+
+.close-icon.active span:nth-child(2) {
+  -webkit-transform: rotate(960deg) scale(0.1);
+          transform: rotate(960deg) scale(0.1);
+  opacity: 0;
+}
+
 .hidden-menu {
   position: fixed;
   top: 0;
@@ -424,6 +473,9 @@ footer .container > * {
   main h2 {
     font-size: 2rem;
   }
+  .promotions h1 {
+    font-size: 1.5rem;
+  }
   .header .logo img {
     height: 30vh;
     width: 30vh;
@@ -536,6 +588,32 @@ footer .container > * {
   to {
     right: -100%;
   }
+}
+
+.promotions {
+  margin: 200px 0;
+}
+
+.promotions .promoiton-image-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+}
+
+.promotions .gray {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
 }
 
 html {
