@@ -46,19 +46,43 @@
 		}
 
 		.navbar-icon span:nth-child(3) {
+			top: 18px;
+		}
+
+		.navbar-icon span:nth-child(4) {
 			top: 36px;
 		}
 
-		.navbar-icon.active span {
+		.navbar-icon.active span:nth-child(1) {
 			animation: hide .5s ease-in both;
 		}
 
-		.navbar-icon.active span:nth-child(1) {
+		.navbar-icon.active span:nth-child(4) {
+			animation: hide .5s ease-in both;
+		}
+
+		.navbar-icon.active span:nth-child(2) {
 			animation: show-top .5s ease-in both;
 		}
 
 		.navbar-icon.active span:nth-child(3) {
 			animation: show-bottom .5s ease-in both;
+		}
+
+		.navbar-icon.disabled span:nth-child(1) {
+			animation: hide .5s ease-in both reverse;
+		}
+
+		.navbar-icon.disabled span:nth-child(4) {
+			animation: hide .5s ease-in both reverse;
+		}
+
+		.navbar-icon.disabled span:nth-child(2) {
+			animation: show-top .5s ease-in both reverse;
+		}
+
+		.navbar-icon.disabled span:nth-child(3) {
+			animation: show-bottom .5s ease-in both reverse;
 		}
 
 		@keyframes hide {
@@ -68,18 +92,18 @@
 
 			to {
 				opacity: 0;
+				top: 18px;
+				transform: scale(.1);
 			}
 		}
 
 		@keyframes show-top {
 			from {
-				top: 0px;
 				opacity: 0;
 				transform: rotate(0deg);
 			}
 
 			to {
-				top: 18px;
 				opacity: 1;
 				transform: rotate(45deg);
 			}
@@ -87,13 +111,11 @@
 
 		@keyframes show-bottom {
 			from {
-				top: 36px;
 				opacity: 36;
 
 			}
 
 			to {
-				top: 18px;
 				opacity: 1;
 				transform: rotate(-45deg);
 			}
@@ -106,12 +128,19 @@
 		<span></span>
 		<span></span>
 		<span></span>
+		<span></span>
 	</div>
 
 	<script>
 		var navbarIcon = document.querySelector(".navbar-icon");
 		navbarIcon.addEventListener('click', function () {
-			navbarIcon.classList.toggle('active');
+			if (navbarIcon.classList.contains("active")) {
+				navbarIcon.classList.remove('active');
+				navbarIcon.classList.add('disabled');
+			} else {
+				navbarIcon.classList.add('active');
+				navbarIcon.classList.remove('disabled');
+			}
 		})
 	</script>
 </body>

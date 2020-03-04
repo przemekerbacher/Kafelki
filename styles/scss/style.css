@@ -41,8 +41,6 @@ nav.main-navigation li:hover {
 }
 
 .header .logo {
-  background-color: #146e2d;
-  border: solid 8px #b30908;
   padding: 30px;
 }
 
@@ -127,7 +125,7 @@ main .product-name {
   margin: 0;
   text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
