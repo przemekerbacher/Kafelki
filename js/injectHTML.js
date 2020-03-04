@@ -1,10 +1,10 @@
 // Inject html
 let injectHTML = () => {
-	let obj = {
+	let productsData = {
 		"pizzas": [{
 				"id": 1,
 				"name": "margherita",
-				"price": "30.00",
+				"price": "18.00",
 				"image-url": "../images/pizza-margherita.jpg",
 				"ingredients": [
 					"sos pomidorowy",
@@ -15,7 +15,7 @@ let injectHTML = () => {
 			{
 				"id": 2,
 				"name": "Rita",
-				"price": "30.00",
+				"price": "20.00",
 				"image-url": "../images/pizza-rounded.jpg",
 				"ingredients": [
 					"szynka"
@@ -25,7 +25,7 @@ let injectHTML = () => {
 			{
 				"id": 3,
 				"name": "Fungi",
-				"price": "30.00",
+				"price": "22.00",
 				"image-url": "../images/pizza-napoletana.jpg",
 				"ingredients": [
 					"pierczarki"
@@ -35,7 +35,7 @@ let injectHTML = () => {
 			{
 				"id": 4,
 				"name": "Salami",
-				"price": "30.00",
+				"price": "24.00",
 				"image-url": "../images/pizza-cinque-stagioni.jpg",
 				"ingredients": [
 					"salami"
@@ -45,7 +45,7 @@ let injectHTML = () => {
 			{
 				"id": 5,
 				"name": "Capri",
-				"price": "30.00",
+				"price": "20.00",
 				"image-url": "../images/pizza-rounded.jpg",
 				"ingredients": [
 					"pieczarki",
@@ -56,7 +56,7 @@ let injectHTML = () => {
 			{
 				"id": 6,
 				"name": "Hawajska",
-				"price": "30.00",
+				"price": "21.00",
 				"image-url": "../images/pizza-margherita.jpg",
 				"ingredients": [
 					"szynka",
@@ -67,7 +67,7 @@ let injectHTML = () => {
 			{
 				"id": 7,
 				"name": "Tonno",
-				"price": "30.00",
+				"price": "21.00",
 				"image-url": "../images/pizza-napoletana.jpg",
 				"ingredients": [
 					"tuńczyk",
@@ -78,26 +78,33 @@ let injectHTML = () => {
 		],
 		"drinks": [{
 				"id": 1,
-				"name": "Coca-Cola",
-				"price": "4.00",
+				"name": "7UP 0,5",
+				"price": "5.00",
 				"image-url": "https://dummyimage.com/250x250/000/48990b"
 			},
 			{
 				"id": 2,
-				"name": "Sprite",
-				"price": "4.00",
+				"name": "7UP 1 litr",
+				"price": "7.00",
 				"image-url": "https://dummyimage.com/250x250/000/48990b"
 			},
 			{
 				"id": 3,
-				"name": "Napój CApi",
+				"name": "Napój Capi",
 				"price": "4.00",
 				"image-url": "https://dummyimage.com/250x250/000/48990b"
-			}
+			},
+			{
+				"id": 4,
+				"name": "Ice Tea Lemon",
+				"price": "5.00",
+				"image-url": "https://dummyimage.com/250x250/000/48990b"
+			},
+
 		]
 	}
-	let pizzas = obj.pizzas;
-	let drinks = obj.drinks;
+	let pizzas = productsData.pizzas;
+	let drinks = productsData.drinks;
 	let pizzasElement = document.querySelector('.products #pizza');
 	let drinksElement = document.querySelector('.products #drinks');
 

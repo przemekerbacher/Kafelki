@@ -1,0 +1,24 @@
+.features {
+	padding: 200px 0;
+
+	.feature {
+		padding: 0 20px;
+	}
+
+	.feature-image {
+		display: flex;
+		justify-content: center;
+		justify-items: center;
+		overflow: hidden;
+		border-radius: 50%;
+		width: 300px;
+		height: 300px;
+	}
+
+	.img {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+}
