@@ -5,7 +5,7 @@ let injectHTML = () => {
 				"id": 1,
 				"name": "margherita",
 				"price": "18.00",
-				"image-url": "../images/pizza-margherita.jpg",
+				"image-url": "images/pizza-margherita.jpg",
 				"ingredients": [
 					"sos pomidorowy",
 					"ser"
@@ -16,7 +16,7 @@ let injectHTML = () => {
 				"id": 2,
 				"name": "Rita",
 				"price": "20.00",
-				"image-url": "../images/pizza-rounded.jpg",
+				"image-url": "images/pizza-rounded.jpg",
 				"ingredients": [
 					"szynka"
 				],
@@ -26,7 +26,7 @@ let injectHTML = () => {
 				"id": 3,
 				"name": "Fungi",
 				"price": "22.00",
-				"image-url": "../images/pizza-napoletana.jpg",
+				"image-url": "images/pizza-napoletana.jpg",
 				"ingredients": [
 					"pierczarki"
 				],
@@ -36,7 +36,7 @@ let injectHTML = () => {
 				"id": 4,
 				"name": "Salami",
 				"price": "24.00",
-				"image-url": "../images/pizza-cinque-stagioni.jpg",
+				"image-url": "images/pizza-cinque-stagioni.jpg",
 				"ingredients": [
 					"salami"
 				],
@@ -46,7 +46,7 @@ let injectHTML = () => {
 				"id": 5,
 				"name": "Capri",
 				"price": "20.00",
-				"image-url": "../images/pizza-rounded.jpg",
+				"image-url": "images/pizza-rounded.jpg",
 				"ingredients": [
 					"pieczarki",
 					"szynka"
@@ -57,7 +57,7 @@ let injectHTML = () => {
 				"id": 6,
 				"name": "Hawajska",
 				"price": "21.00",
-				"image-url": "../images/pizza-margherita.jpg",
+				"image-url": "images/pizza-margherita.jpg",
 				"ingredients": [
 					"szynka",
 					"ananas"
@@ -68,7 +68,7 @@ let injectHTML = () => {
 				"id": 7,
 				"name": "Tonno",
 				"price": "21.00",
-				"image-url": "../images/pizza-napoletana.jpg",
+				"image-url": "images/pizza-napoletana.jpg",
 				"ingredients": [
 					"tuńczyk",
 					"cebula"
