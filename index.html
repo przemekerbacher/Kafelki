@@ -4,13 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Demo's Pizzos</title>
+	<title>Pizza valentino</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/css/style.min.css">
 </head>
 
 <body>
+	<div class="test">
+	</div>
 	<div class="basket">
 		<i class="fas fa-shopping-basket"></i>
 	</div>
@@ -18,6 +20,7 @@
 		<i class="fas fa-hamburger"></i>
 	</div>
 	<div class="hidden-menu text-center">
+		<div class="blur"></div>
 		<div class="close-hidden-menu p-4">
 			<i class="fas fa-times-circle"></i>
 		</div>
@@ -31,6 +34,7 @@
 		</ul>
 	</div>
 	<div class="order py-5">
+		<div class="blur"></div>
 		<div class="close-order p-4">
 			<i class="fas fa-times-circle"></i>
 		</div>
@@ -110,231 +114,13 @@
 
 		</div>
 		<div class="products w-100" data-spy="scroll" data-target="#products-scroll-spy" data-offset="0">
-			<div id="pizza" class="pizza row">
+			<div id="pizza" class="pizza row justify-content-center">
 				<h2 class="col-12 display-3">Pizza</h2>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="images/pizza-rounded.jpg" alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-							<p class="col-6 product-name ">margherita</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">30.00 zł</span>
-							</div>
-						</div>
-						<div class="product-ingredients w-100">
-							<p>
-								sos pomidorowy, ser
-							</p>
-						</div>
-						<div class="product-alergens d-flex justify-content-center flex-column">
-							<button id="expand-button" class="dropdown-toggle" type="button" data-toggle="collapse"
-								data-target="#texpand-alergens6" aria-expanded="false"></button>
-							<p class="collapse" id="texpand-alergens6"><strong>Alergeny:</strong> Zboża zawierające
-								gluten,
-								pszenica, jęczmień, owies, orkisz, kamut lub
-								ich odmiany
-								hybrydowe, a także produkty pochodne,
-								Skorupiaki i produkty pochodne, Jaja i produkty pochodne,Ryby i produkty pochodne
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="images/pizza-cinque-stagioni.jpg"
-							alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-
-							<p class="col-6 product-name ">rita</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">32.99 zł</span>
-							</div>
-						</div>
-						<div class="product-ingredients w-100">
-							<p>
-								szynka
-							</p>
-						</div>
-						<div class="product-alergens d-flex justify-content-center flex-column">
-							<button id="expand-button" class="dropdown-toggle" type="button" data-toggle="collapse"
-								data-target="#texpand-alergens1" aria-expanded="false"></button>
-							<p class="collapse" id="texpand-alergens1"> Zboża zawierające gluten, tj.
-								pszenica, jęczmień, owies, orkisz, kamut lub
-								ich odmiany
-								hybrydowe, a także produkty pochodne,
-								Skorupiaki i produkty pochodne, Jaja i produkty pochodne,Ryby i produkty pochodne
-							</p>
-						</div>
-
-
-					</div>
-				</div>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="images/pizza-napoletana.jpg"
-							alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-
-							<p class="col-6 product-name ">fungi</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">30.00 zł</span>
-							</div>
-						</div>
-						<div class="product-ingredients w-100">
-							<p>
-								pierczarki
-							</p>
-						</div>
-						<div class="collapse" id="collapseExample">
-							<div class="card card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-								squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-								sapiente
-								ea proident.
-							</div>
-						</div>
-						<div class="product-alergens d-flex justify-content-center flex-column">
-							<button id="expand-button" class="dropdown-toggle" type="button" data-toggle="collapse"
-								data-target="#texpand-alergens2" aria-expanded="false"></button>
-							<p class="collapse" id="texpand-alergens2"> Zboża zawierające gluten, tj.
-								pszenica, jęczmień, owies, orkisz, kamut lub
-								ich odmiany
-								hybrydowe, a także produkty pochodne,
-								Skorupiaki i produkty pochodne, Jaja i produkty pochodne,Ryby i produkty pochodne
-							</p>
-						</div>
-
-
-					</div>
-				</div>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="images/pizza-cinque-stagioni.jpg"
-							alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-
-							<p class="col-6 product-name ">salami</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">30.00 zł</span>
-							</div>
-						</div>
-						<div class="product-ingredients w-100">
-							<p>
-								salami
-							</p>
-						</div>
-						<div class="collapse" id="collapseExample">
-							<div class="card card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-								squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-								sapiente
-								ea proident.
-							</div>
-						</div>
-						<div class="product-alergens d-flex justify-content-center flex-column">
-							<button id="expand-button" class="dropdown-toggle" type="button" data-toggle="collapse"
-								data-target="#texpand-alergens3" aria-expanded="false"></button>
-							<p class="collapse" id="texpand-alergens3"> Zboża zawierające gluten, tj.
-								pszenica, jęczmień, owies, orkisz, kamut lub
-								ich odmiany
-								hybrydowe, a także produkty pochodne,
-								Skorupiaki i produkty pochodne, Jaja i produkty pochodne,Ryby i produkty pochodne
-							</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="images/pizza-margherita.jpg"
-							alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-
-							<p class="col-6 product-name ">capri</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">30.00 zł</span>
-							</div>
-						</div>
-						<div class="product-ingredients w-100">
-							<p>
-								pierczarki, szynka
-							</p>
-						</div>
-						<div class="collapse" id="collapseExample">
-							<div class="card card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-								squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-								sapiente
-								ea proident.
-							</div>
-						</div>
-						<div class="product-alergens d-flex justify-content-center flex-column">
-							<button id="expand-button" class="dropdown-toggle" type="button" data-toggle="collapse"
-								data-target="#texpand-alergens4" aria-expanded="false"></button>
-							<p class="collapse" id="texpand-alergens4"> Zboża zawierające gluten, tj.
-								pszenica, jęczmień, owies, orkisz, kamut lub
-								ich odmiany
-								hybrydowe, a także produkty pochodne,
-								Skorupiaki i produkty pochodne, Jaja i produkty pochodne,Ryby i produkty pochodne
-							</p>
-						</div>
-
-
-					</div>
-				</div>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="images/pizza-napoletana.jpg"
-							alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-
-							<p class="col-6 product-name ">hawajska</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">30.00 zł</span>
-							</div>
-						</div>
-						<div class="product-ingredients w-100">
-							<p>
-								szynka, ananas
-							</p>
-						</div>
-						<div class="collapse" id="collapseExample">
-							<div class="card card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-								squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-								sapiente
-								ea proident.
-							</div>
-						</div>
-						<div class="product-alergens d-flex justify-content-center flex-column">
-							<button id="expand-button" class="dropdown-toggle" type="button" data-toggle="collapse"
-								data-target="#texpand-alergens5" aria-expanded="false"></button>
-							<p class="collapse" id="texpand-alergens5"> Zboża zawierające gluten, tj.
-								pszenica, jęczmień, owies, orkisz, kamut lub
-								ich odmiany
-								hybrydowe, a także produkty pochodne,
-								Skorupiaki i produkty pochodne, Jaja i produkty pochodne,Ryby i produkty pochodne
-							</p>
-						</div>
-
-
-					</div>
-				</div>
+				<!-- Inject from injectHTML.js -->
 			</div>
-			<div id="drinks" class="drinks row">
+			<div id="drinks" class="drinks row justify-content-center">
 				<h2 class="col-12 display-3">Drinki</h2>
-				<div class="product-wrap col-md-6 col-lg-4 p-3">
-					<div class="product-item rounded">
-						<img class="product-image img-thumbnail w-75" src="https://dummyimage.com/200x200/000/48990b"
-							alt="produt-image">
-						<div class="product-info w-100 pt-1 text-color row align-items-center row">
-							<p class="col-6 product-name ">Coca - cola 330 ml</p>
-							<div class="col-6">
-								<span class="product-price d-block text-right">4.00 zł</span>
-							</div>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</main>
@@ -357,7 +143,7 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="js/injectHTML.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>
