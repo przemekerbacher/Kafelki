@@ -17,6 +17,10 @@ nav.main-navigation ul {
   cursor: pointer;
 }
 
+nav.main-navigation a {
+  color: white !important;
+}
+
 nav.main-navigation li:hover {
   color: #ddd;
 }
@@ -703,6 +707,10 @@ footer .container > * {
   background-size: cover;
   background-position: right;
   color: white;
+}
+
+.finish .order-image {
+  opacity: 0.3;
 }
 
 .finish h2,
