@@ -64,7 +64,3 @@ document.addEventListener('click', function () {
 		}
 	}
 })
-
-document.addEventListener('click', function () {
-	console.log(event.target);
-})

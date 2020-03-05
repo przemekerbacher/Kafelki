@@ -21,8 +21,20 @@ nav.main-navigation a {
   color: white !important;
 }
 
+nav.main-navigation a:hover {
+  color: #ddd !important;
+}
+
 nav.main-navigation li:hover {
   color: #ddd;
+}
+
+nav.main-navigation .languages {
+  background-color: transparent;
+}
+
+nav.main-navigation .languages a:hover {
+  background-color: transparent;
 }
 
 .header {
@@ -459,7 +471,6 @@ footer .container > * {
 
 @media (max-height: 640px) {
   footer {
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -486,10 +497,12 @@ footer .container > * {
     height: 30vh;
     width: 30vh;
   }
-  .confirm-order header h1 {
+  .confirm-order header h1,
+  .finish header h1 {
     font-size: 2.5rem;
   }
-  .confirm-order .form {
+  .confirm-order .form,
+  .finish .form {
     width: 100% !important;
   }
 }
@@ -722,6 +735,15 @@ footer .container > * {
 .finish p {
   margin: 0;
   color: #544c4c;
+}
+
+.finish .next-order {
+  background-color: #b30908;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
 }
 
 html {

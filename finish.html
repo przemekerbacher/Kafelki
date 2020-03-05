@@ -11,6 +11,7 @@
 </head>
 
 <body>
+	<!-- nav -->
 	<nav class="main-navigation navbar navbar-expand-lg navbar-light position-absolute">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -19,11 +20,17 @@
 			</button>
 			<div class="collapse navbar-collapse" id="main-nav">
 				<ul class="navbar-nav d-flex justify-content-around w-100">
-					<li class="nav-item"><a class="nav-link" href="#menu"></a>Menu</li>
-					<li class="nav-item"><a class="nav-link" href="#promotions"></a>Promocje</li>
-					<li class="nav-item"><a class="nav-link" href="#"></a>Zamów online</li>
-					<li class="nav-item"><a class="nav-link" href="#"></a>Twoje konto</li>
-					<li class="nav-item"><a class="nav-link" href="#"></a>Zmiana języka</li>
+					<li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+					<li class="nav-item"><a class="nav-link" href="#promotions">Promocje</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Zamów online</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Twoje konto</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+							role="button" aria-haspopup="true" aria-expanded="false">Zmiana języka</a>
+						<div class="dropdown-menu languages">
+							<a class="dropdown-item" href="#">Polski</a>
+							<a class="dropdown-item" href="#">English</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -35,7 +42,7 @@
 		<main>
 			<section class="order-info container text-center">
 				<div>
-					<h2 class="display-4 my-5">Numer zamówienia: <span>101</span></h1>
+					<h2 class="display-4 my-5">Twój numer zamówienia: <span>101</span></h1>
 						<img class="img-fluid w-50 mb-5 order-image" src="images/text-decoration-red.png"
 							alt="decoration">
 				</div>
@@ -82,7 +89,7 @@
 				</div>
 				<div class="ordered-footer">
 					<div class="summary text-right">
-						<p>Razem: <span>10.00 PLN</span></p>
+						<p class="font-weight-bold">Razem: <span>10.00 PLN</span></p>
 					</div>
 				</div>
 			</section>
@@ -93,8 +100,10 @@
 					<p class="col-6">Czy z dostawą</p><span class="col-6"><i class="fas fa-check"></i></span>
 					<p class="col-6">Forma płatności</p><span class="col-6">Gotówka</span>
 				</div>
-
 			</section>
+			<div class="container pb-5 text-center">
+				<button class=" next-order">Nowe zamówienie</button>
+			</div>
 		</main>
 	</div>
 	<footer>

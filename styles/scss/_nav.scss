@@ -18,9 +18,21 @@ nav.main-navigation {
 		color: white !important;
 	}
 
+	a:hover {
+		color: #ddd !important;
+	}
+
 	li {
 		&:hover {
 			color: #ddd;
+		}
+	}
+
+	.languages {
+		background-color: transparent;
+
+		a:hover {
+			background-color: transparent;
 		}
 	}
 }
