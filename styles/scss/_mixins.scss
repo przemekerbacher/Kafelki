@@ -28,5 +28,14 @@
 		width: 100vw;
 		z-index: -1;
 	}
+}
 
+@mixin header {
+	padding: 200px 0;
+	text-align: center;
+	background-image: url("../../images/background-image.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right;
+	color: white;
 }

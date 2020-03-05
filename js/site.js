@@ -1,3 +1,7 @@
+document.addEventListener('ready', function () {
+	body.classList.remove('blur');
+})
+
 let expandButton = document.querySelector('#expand-button');
 let menuButton = document.querySelector('.menu');
 let hiddenMenu = document.querySelector('.hidden-menu');
@@ -34,10 +38,10 @@ closeHiddenMenuButton.addEventListener('click', function () {
 	hiddenMenu.classList.add('disabled');
 })
 
-//rotate expand button
-expandButton.addEventListener('click', function () {
-	this.classList.toggle('rotate');
-})
+// //rotate expand button
+// expandButton.addEventListener('click', function () {
+// 	this.classList.toggle('rotate');
+// })
 
 //hide menu when menu item clicked
 hiddenMenuItems.forEach(element => {

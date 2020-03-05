@@ -3,7 +3,9 @@ nav.main-navigation {
   top: 0;
   left: 0;
   color: white;
-  background-color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background: linear-gradient(black, transparent);
+  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -69,7 +71,7 @@ nav.main-navigation li:hover {
 }
 
 .features {
-  margin: 200px 0;
+  padding: 200px 0;
 }
 
 .features .feature {
@@ -97,19 +99,19 @@ nav.main-navigation li:hover {
   border-radius: 50%;
 }
 
-main {
+.main {
   color: #146e2d;
 }
 
-main h1 {
+.main h1 {
   font-family: "Fjalla One", sans-serif;
 }
 
-main .products {
+.main .products {
   scroll-behavior: smooth;
 }
 
-main .product-item {
+.main .product-item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +134,7 @@ main .product-item {
   color: #b30908;
 }
 
-main .product-item .add-to-basket {
+.main .product-item .add-to-basket {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,25 +152,25 @@ main .product-item .add-to-basket {
   cursor: pointer;
 }
 
-main .product-item img {
+.main .product-item img {
   border-radius: 50%;
   margin-bottom: 5rem;
 }
 
-main .product-item button {
+.main .product-item button {
   padding: 10 20px;
   background-color: transparent;
   border: solid 1px black;
   border-radius: 5px;
 }
 
-main .product-price {
+.main .product-price {
   font-family: "Fjalla One", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-main .product-name {
+.main .product-name {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
@@ -178,13 +180,13 @@ main .product-name {
   letter-spacing: 2px;
 }
 
-main .product-calories {
+.main .product-calories {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
-main .product-alergens button {
+.main .product-alergens button {
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -193,23 +195,23 @@ main .product-alergens button {
   outline: 0;
 }
 
-main #expand-button {
+.main #expand-button {
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
 
-main .rotate {
+.main .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-main .active {
+.main .active {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
-main #products-scroll-spy {
+.main #products-scroll-spy {
   list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
@@ -480,6 +482,12 @@ footer .container > * {
     height: 30vh;
     width: 30vh;
   }
+  .confirm-order header h1 {
+    font-size: 2.5rem;
+  }
+  .confirm-order .form {
+    width: 100% !important;
+  }
 }
 
 .order {
@@ -591,7 +599,7 @@ footer .container > * {
 }
 
 .promotions {
-  margin: 200px 0;
+  margin-bottom: 200px;
 }
 
 .promotions .promoiton-image-wrap {
@@ -614,6 +622,98 @@ footer .container > * {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
+}
+
+.confirm-order header {
+  padding: 200px 0;
+  text-align: center;
+  background-image: url("../../images/background-image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+  color: white;
+}
+
+.confirm-order section {
+  margin: 50px 0;
+  color: #146e2d;
+}
+
+.confirm-order section p {
+  color: #544c4c;
+}
+
+.confirm-order section label {
+  color: #544c4c;
+}
+
+.confirm-order section small {
+  margin-bottom: 50px;
+}
+
+.confirm-order section [class$="header"] {
+  margin-bottom: 2rem;
+}
+
+.confirm-order .check .change-your-order {
+  background-color: #b30908;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.confirm-order .check .info p {
+  color: white;
+}
+
+.confirm-order input[name="time"] {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.confirm-order input[name="time"].show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.confirm-order .check .check-body {
+  margin-bottom: 1rem;
+}
+
+.confirm-order .confirm-products .product {
+  border-bottom: solid 1px #dee2e6;
+}
+
+.confirm-order .submit {
+  background-color: #b30908;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.finish header {
+  padding: 200px 0;
+  text-align: center;
+  background-image: url("../../images/background-image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+  color: white;
+}
+
+.finish h2,
+.finish h3,
+.finish h4 {
+  color: #146e2d;
+}
+
+.finish p {
+  margin: 0;
+  color: #544c4c;
 }
 
 html {
