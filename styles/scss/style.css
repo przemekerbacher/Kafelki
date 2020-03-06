@@ -55,7 +55,7 @@ nav.main-navigation .languages a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header .logo {
@@ -84,6 +84,12 @@ nav.main-navigation .languages a:hover {
   transition: color .5s, -webkit-box-shadow .5s linear;
   transition: color .5s, box-shadow .5s linear;
   transition: color .5s, box-shadow .5s linear, -webkit-box-shadow .5s linear;
+}
+
+.header .motto {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .features {
@@ -460,16 +466,53 @@ footer .container > * {
   }
 }
 
-@media (max-width: 1000px) {
-  .header a {
-    font-size: 4rem;
+@media (max-width: 1200px) {
+  .logo img {
+    height: 30vh;
+    width: 30vh;
   }
+  .logo .motto {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .hidden-menu a {
     font-size: 1rem;
   }
   .hidden-menu,
   .order.active {
     width: 100vw;
+  }
+  .confirm-order header h1,
+  .finish header h1 {
+    font-size: 2.5rem;
+  }
+  .confirm-order .form,
+  .finish .form {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 3rem;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+  .promotions h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature h1 {
+    font-size: 2rem;
+  }
+  .feature .feature-image {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -484,30 +527,6 @@ footer .container > * {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  main h1 {
-    font-size: 3rem;
-  }
-  main h2 {
-    font-size: 2rem;
-  }
-  .promotions h1 {
-    font-size: 1.5rem;
-  }
-  .header .logo img {
-    height: 30vh;
-    width: 30vh;
-  }
-  .confirm-order header h1,
-  .finish header h1 {
-    font-size: 2.5rem;
-  }
-  .confirm-order .form,
-  .finish .form {
-    width: 100% !important;
   }
 }
 

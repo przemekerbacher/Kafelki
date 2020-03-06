@@ -7,7 +7,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	min-height: 100vh;
 
 	.logo {
 		padding: 30px;
@@ -31,5 +31,11 @@
 		box-shadow: 0px 0px 10px 0px $color-primary;
 		border-radius: 50%;
 		transition: color .5s, box-shadow .5s linear;
+	}
+
+	.motto {
+		font-family: $decorative-font;
+		font-size: 3rem;
+		margin: 0;
 	}
 }
