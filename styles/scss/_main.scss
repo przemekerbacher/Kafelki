@@ -10,8 +10,6 @@
 	}
 
 	.product-item {
-		position: relative;
-
 		.add-to-basket {
 			display: flex;
 			justify-content: center;
@@ -26,7 +24,6 @@
 
 		img {
 			border-radius: 50%;
-			margin-bottom: 5rem;
 		}
 
 		.product-button {
@@ -80,9 +77,6 @@
 		}
 	}
 
-
-
-
 	#expand-button {
 		transition: transform .3s;
 	}
@@ -93,10 +87,5 @@
 
 	.active {
 		background-color: $color-red-dark;
-	}
-
-	#products-scroll-spy {
-		list-style: none;
-		border-bottom: 1px solid rgba(255, 255, 255, .75);
 	}
 }

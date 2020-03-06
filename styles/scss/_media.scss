@@ -62,6 +62,25 @@
 			height: 200px;
 		}
 	}
+
+	.main {
+		h1 {
+			font-size: 4rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		.product-name,
+		.product-price {
+			font-size: 1.2rem;
+		}
+
+		.product-ingredients {
+			font-size: 1rem;
+		}
+	}
 }
 
 

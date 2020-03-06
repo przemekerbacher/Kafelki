@@ -63,8 +63,8 @@ nav.main-navigation .languages a:hover {
 }
 
 .header .logo img {
-  height: 50vh;
-  width: 50vh;
+  height: 20vh;
+  width: 20vh;
 }
 
 .header div.jumbotron .jumbotron-fluid {
@@ -72,6 +72,7 @@ nav.main-navigation .languages a:hover {
 }
 
 .header a {
+  margin-top: 100px;
   font-size: 3rem;
 }
 
@@ -88,6 +89,7 @@ nav.main-navigation .languages a:hover {
   font-family: "Fjalla One", sans-serif;
   font-size: 3rem;
   margin: 0;
+  max-width: 100%;
 }
 
 .features {
@@ -133,7 +135,6 @@ nav.main-navigation .languages a:hover {
 }
 
 .main .product-item {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +176,6 @@ nav.main-navigation .languages a:hover {
 
 .main .product-item img {
   border-radius: 50%;
-  margin-bottom: 5rem;
 }
 
 .main .product-item .product-button {
@@ -233,11 +233,6 @@ nav.main-navigation .languages a:hover {
 
 .main .active {
   background-color: rgba(0, 0, 0, 0.12);
-}
-
-.main #products-scroll-spy {
-  list-style: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 footer {
@@ -511,6 +506,19 @@ footer .container > * {
   .feature .feature-image {
     width: 200px;
     height: 200px;
+  }
+  .main h1 {
+    font-size: 4rem;
+  }
+  .main h2 {
+    font-size: 2rem;
+  }
+  .main .product-name,
+  .main .product-price {
+    font-size: 1.2rem;
+  }
+  .main .product-ingredients {
+    font-size: 1rem;
   }
 }
 

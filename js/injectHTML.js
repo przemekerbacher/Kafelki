@@ -110,32 +110,35 @@ let injectHTML = () => {
 
 	pizzas.forEach(element => {
 		var html = `
-		<div class="product-wrap col-md-6 col-lg-4 p-3">
-<div class="product-item rounded">
-	
-	<img class="product-image img-thumbnail w-75" src="${element["image-url"]}" alt="produt-image">
-	<div class="product-info w-100 pt-1 text-color row align-items-center row">
-		<p class="col-6 product-name ">${element.name}</p>
-		<div class="col-6">
-			<span class="product-price d-block text-right">30.00 zł</span>
-		</div>
-	</div>
-	<div class="product-ingredients w-100">
-		<p>
-			${element.ingredients.join(", ")}
-		</p>
-	</div>
-		<button class="product-button">Dodaj do koszyka</button>
-	<div class="product-alergens d-flex justify-content-center flex-column">
-		<button id="expand-button-${element.id}" class="dropdown-toggle" type="button" data-toggle="collapse"
-			data-target="#expand-alergens-${element.id}" aria-expanded="false"></button>
-		<p class="collapse" id="expand-alergens-${element.id}">
-			<strong>Alergeny:</strong>
-			${element.alergens}
-		</p>
-	</div>
-</div>
-</div>`;
+		<div class="product-wrap col-md-6 p-3">
+			<div class="product-item rounded">
+				<div class="row align-items-center">
+					<div class="col-3 mb-2">
+						<img class="product-image img-thumbnail img-fluid" src="${element["image-url"]}" alt="produt-image">
+					</div>
+					<div class="product-info text-color col-6">
+						<p class="col-6 product-name">${element.name}</p>
+						<div class="product-ingredients p-0 m-0 w-100 col-12">
+							<p>
+								${element.ingredients.join(", ")}
+							</p>
+						</div>
+					</div>
+					<div class="col-3">
+						<span class="product-price d-block text-right">30.00 zł</span>
+					</div>
+				</div>
+				<button class="product-button">Dodaj do koszyka</button>
+				<div class="product-alergens d-flex justify-content-center flex-column">
+					<button id="expand-button-${element.id}" class="dropdown-toggle" type="button" data-toggle="collapse"
+						data-target="#expand-alergens-${element.id}" aria-expanded="false"></button>
+					<p class="collapse" id="expand-alergens-${element.id}">
+						<strong>Alergeny:</strong>
+						${element.alergens}
+					</p>
+				</div>
+			</div>
+		</div>`;
 		pizzasElement.innerHTML += html;
 	});
 
