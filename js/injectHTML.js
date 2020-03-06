@@ -143,18 +143,7 @@ let injectHTML = () => {
 	});
 
 	drinks.forEach(element => {
-		var html = `<div class="product-wrap col-md-6 col-lg-4 p-3">
-		<div class="product-item rounded">
-			<img class="product-image img-thumbnail w-75" src="${element["image-url"]}"
-				alt="produt-image">
-			<div class="product-info w-100 pt-1 text-color row align-items-center row">
-				<p class="col-6 product-name ">${element.name}</p>
-				<div class="col-6">
-					<span class="product-price d-block text-right">4.00 zł</span>
-				</div>
-			</div>
-		</div>
-	</div>`;
+		var html = ``;
 
 		drinksElement.innerHTML += html;
 	})
