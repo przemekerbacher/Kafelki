@@ -667,6 +667,10 @@ footer .container > * {
   opacity: .3;
 }
 
+.confirm-order {
+  padding-bottom: 3rem;
+}
+
 .confirm-order header {
   padding: 200px 0;
   text-align: center;
