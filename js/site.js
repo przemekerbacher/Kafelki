@@ -1,7 +1,3 @@
-document.addEventListener('ready', function () {
-	body.classList.remove('blur');
-})
-
 let expandButton = document.querySelector('#expand-button');
 let menuButton = document.querySelector('.menu');
 let hiddenMenu = document.querySelector('.hidden-menu');
@@ -11,6 +7,7 @@ let order = document.querySelector(".order");
 let closeOrderButton = document.querySelector('.close-order');
 let hiddenMenuUl = document.querySelectorAll('.hidden-menu ul');
 let hiddenMenuItems = document.querySelectorAll('.hidden-menu li');
+let header = document.querySelector("header");
 
 //basket move in effect
 basketbutton.addEventListener('click', function () {
@@ -62,5 +59,15 @@ document.addEventListener('click', function () {
 			hiddenMenu.classList.remove('active');
 			hiddenMenu.classList.add('disabled');
 		}
+	}
+})
+
+
+let navbarToggler = document.querySelector('.navbar-toggler');
+navbarToggler.addEventListener('click', function () {
+	if (this.getAttribute("aria-expanded") == "false") {
+		header.classList.add("blur");
+	} else {
+		header.classList.remove("blur");
 	}
 })

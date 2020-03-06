@@ -23,3 +23,13 @@ body {
 	height: 100vh;
 	background-color: $color-background;
 }
+
+.top {
+	position: relative;
+	z-index: 1;
+	background-color: $color-background;
+}
+
+.blur {
+	filter: blur(10px);
+}

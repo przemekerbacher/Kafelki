@@ -1,3 +1,7 @@
+header {
+	transition: filter .3s linear;
+}
+
 .header {
 	background-image: $background-image-url;
 	background-size: cover;

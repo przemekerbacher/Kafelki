@@ -3,6 +3,9 @@ footer {
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
+	position: sticky;
+	z-index: -1;
+	bottom: 0;
 
 
 	a {
