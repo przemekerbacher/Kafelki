@@ -87,7 +87,8 @@ nav.main-navigation .languages a:hover {
 }
 
 .features {
-  padding: 200px 0;
+  margin: 100px 0;
+  color: #544c4c;
 }
 
 .features .feature {
@@ -116,7 +117,7 @@ nav.main-navigation .languages a:hover {
 }
 
 .main {
-  color: #146e2d;
+  color: #544c4c;
 }
 
 .main h1 {
@@ -173,11 +174,14 @@ nav.main-navigation .languages a:hover {
   margin-bottom: 5rem;
 }
 
-.main .product-item button {
-  padding: 10 20px;
-  background-color: transparent;
-  border: solid 1px black;
+.main .product-item .product-button {
+  background-color: #b30908;
   border-radius: 5px;
+  border-style: none;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .main .product-price {
@@ -270,7 +274,7 @@ footer .container > * {
           align-items: center;
   font-size: 3rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: #b30908;
   border-radius: 5px;
   height: 100px;
   width: 100px;
@@ -288,7 +292,7 @@ footer .container > * {
 
 .basket:hover,
 .menu:hover {
-  background-color: #b30908;
+  background-color: #146e2d;
 }
 
 .close-icon {
@@ -615,30 +619,17 @@ footer .container > * {
   }
 }
 
-.promotions {
-  margin-bottom: 200px;
+.about {
+  margin-bottom: 100px;
+  color: #544c4c;
 }
 
-.promotions .promoiton-image-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-  max-height: 800px;
+.about .contact {
+  font-size: 2rem;
 }
 
-.promotions .gray {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
+.about img {
+  opacity: .3;
 }
 
 .confirm-order header {
@@ -702,6 +693,20 @@ footer .container > * {
 
 .confirm-order .confirm-products .product {
   border-bottom: solid 1px #dee2e6;
+}
+
+.confirm-order .delivery button {
+  background-color: #b30908;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  font-size: .8rem;
+}
+
+.confirm-order .delivery button svg {
+  margin-right: 10px;
 }
 
 .confirm-order .submit {

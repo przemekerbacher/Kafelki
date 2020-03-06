@@ -39,3 +39,11 @@
 	background-position: right;
 	color: white;
 }
+
+@mixin button {
+	background-color: $color-secondary;
+	border-radius: 5px;
+	border-style: none;
+	color: white;
+	padding: 10px 20px;
+}

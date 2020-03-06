@@ -112,9 +112,7 @@ let injectHTML = () => {
 		var html = `
 		<div class="product-wrap col-md-6 col-lg-4 p-3">
 <div class="product-item rounded">
-	<div class="add-to-basket">
-		<i class="fas fa-plus"></i>
-	</div>	
+	
 	<img class="product-image img-thumbnail w-75" src="${element["image-url"]}" alt="produt-image">
 	<div class="product-info w-100 pt-1 text-color row align-items-center row">
 		<p class="col-6 product-name ">${element.name}</p>
@@ -127,6 +125,7 @@ let injectHTML = () => {
 			${element.ingredients.join(", ")}
 		</p>
 	</div>
+		<button class="product-button">Dodaj do koszyka</button>
 	<div class="product-alergens d-flex justify-content-center flex-column">
 		<button id="expand-button-${element.id}" class="dropdown-toggle" type="button" data-toggle="collapse"
 			data-target="#expand-alergens-${element.id}" aria-expanded="false"></button>

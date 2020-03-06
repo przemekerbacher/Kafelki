@@ -65,11 +65,19 @@
 		}
 	}
 
+	.delivery {
+		button {
+			@include button;
+			margin-top: 1rem;
+			font-size: .8rem;
+
+			svg {
+				margin-right: 10px;
+			}
+		}
+	}
+
 	.submit {
-		background-color: $color-secondary;
-		border-radius: 5px;
-		border-style: none;
-		color: white;
-		padding: 10px 20px;
+		@include button
 	}
 }
