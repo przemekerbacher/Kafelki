@@ -1,6 +1,6 @@
 .order {
   @include hidden;
-  left: 150%;
+  right: -150%;
   box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
   color: $text-color;
   z-index: 2;
@@ -49,20 +49,20 @@
 
 @keyframes move-from-right {
   from {
-    left: 150%;
+    right: -100%;
   }
 
   to {
-    left: 0;
+    right: 0%;
   }
 }
 
 @keyframes move-out-from-left {
   from {
-    left: 0%;
+    right: 0%;
   }
 
   to {
-    left: 150%;
+    right: -150%;
   }
 }

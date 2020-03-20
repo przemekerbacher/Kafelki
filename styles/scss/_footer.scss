@@ -5,6 +5,11 @@ footer {
   color: white;
   position: sticky;
 
+  .mask {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   //support IE and Edge browsers
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     position: relative;
