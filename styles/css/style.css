@@ -594,6 +594,7 @@ footer .container > * {
           box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
   color: #544c4c;
   z-index: 2;
+  padding: 100px 0;
 }
 
 .order.active .blur {
