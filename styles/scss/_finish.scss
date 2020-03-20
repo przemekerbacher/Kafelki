@@ -1,31 +1,45 @@
 .finish {
-	// background-color: $color-background;
+  // background-color: $color-background;
 
-	header {
-		@include header;
-	}
+  header {
+    @include header;
+    position: relative;
+    z-index: -2;
 
-	.order-image {
-		opacity: 0.3;
-	}
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
 
-	h2,
-	h3,
-	h4 {
-		color: $color-primary;
-	}
+  .order-image {
+    opacity: 0.3;
+  }
 
-	p {
-		margin: 0;
-		color: $text-color;
-	}
+  h2,
+  h3,
+  h4 {
+    color: $color-primary;
+  }
 
-	.next-order {
-		background-color: $color-secondary;
-		padding: 10px 20px;
-		border-radius: 5px;
-		border-style: none;
-		color: white;
-		cursor: pointer;
-	}
+  p {
+    margin: 0;
+    color: $text-color;
+  }
+
+  .next-order {
+    background-color: $color-secondary;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+  }
 }

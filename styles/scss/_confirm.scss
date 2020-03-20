@@ -1,85 +1,97 @@
 .confirm-order {
-	padding-bottom: 3rem;
+  padding-bottom: 3rem;
 
-	header {
-		@include header;
+  header {
+    @include header;
+    position: relative;
+    z-index: -2;
 
-	}
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
 
-	section {
-		margin: 50px 0;
-		color: $color-primary;
+  section {
+    margin: 50px 0;
+    color: $color-primary;
 
-		p {
-			color: $text-color;
-		}
+    p {
+      color: $text-color;
+    }
 
-		label {
-			color: $text-color;
-		}
+    label {
+      color: $text-color;
+    }
 
-		small {
-			margin-bottom: 50px;
-		}
+    small {
+      margin-bottom: 50px;
+    }
 
-		[class$="header"] {
-			margin-bottom: 2rem;
-		}
-	}
+    [class$="header"] {
+      margin-bottom: 2rem;
+    }
+  }
 
-	.check {
-		.change-your-order {
-			background-color: $color-secondary;
-			padding: 10px 20px;
-			border-radius: 5px;
-			color: white;
-			cursor: pointer;
-		}
+  .check {
+    .change-your-order {
+      background-color: $color-secondary;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
 
-		.info {
-			p {
-				color: white;
-			}
+    .info {
+      p {
+        color: white;
+      }
+    }
+  }
 
-		}
-	}
+  input[name="time"] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 
-	input[name="time"] {
-		visibility: hidden;
-		opacity: 0;
-		transition: opacity .3s;
-	}
+  input[name="time"].show {
+    visibility: visible;
+    opacity: 1;
+  }
 
-	input[name="time"].show {
-		visibility: visible;
-		opacity: 1;
-	}
+  .check {
+    .check-body {
+      margin-bottom: 1rem;
+    }
+  }
 
-	.check {
-		.check-body {
-			margin-bottom: 1rem;
-		}
-	}
+  .confirm-products {
+    .product {
+      border-bottom: solid 1px rgb(222, 226, 230);
+    }
+  }
 
-	.confirm-products {
-		.product {
-			border-bottom: solid 1px rgb(222, 226, 230);
-		}
-	}
+  .delivery {
+    button {
+      @include button;
+      margin-top: 1rem;
+      font-size: 0.8rem;
 
-	.delivery {
-		button {
-			@include button;
-			margin-top: 1rem;
-			font-size: .8rem;
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
 
-			svg {
-				margin-right: 10px;
-			}
-		}
-	}
-
-	.submit {
-		@include button
-	}
+  .submit {
+    @include button;
+  }
 }
