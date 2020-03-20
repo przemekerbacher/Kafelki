@@ -10,54 +10,60 @@ let hiddenMenuItems = document.querySelectorAll(".hidden-menu li");
 let header = document.querySelector("header");
 
 //basket move in effect
-basketbutton.addEventListener("click", function() {
-  order.classList.add("active");
-  order.classList.remove("disabled");
-  document.body.style.height = "100%";
-  document.body.style.overflow = "hidden";
-});
+if (basketbutton)
+  basketbutton.addEventListener("click", function() {
+    order.classList.add("active");
+    order.classList.remove("disabled");
+    document.body.style.height = "100%";
+    document.body.style.overflow = "hidden";
+  });
 
 //basket move out effect
-closeOrderButton.addEventListener("click", function() {
-  order.classList.remove("active");
-  order.classList.add("disabled");
-  document.body.style.height = "auto";
-  document.body.style.overflow = "scroll";
-});
-
-//menu move in effect
-menuButton.addEventListener("click", function() {
-  hiddenMenu.classList.add("active");
-  hiddenMenu.classList.remove("disabled");
-  document.body.style.height = "100%";
-  document.body.style.overflow = "hidden";
-});
-
-//menu move out effect
-closeHiddenMenuButton.addEventListener("click", function() {
-  hiddenMenu.classList.remove("active");
-  hiddenMenu.classList.add("disabled");
-  document.body.style.height = "auto";
-  document.body.style.overflow = "scroll";
-});
-
-//rotate expand button
-expandButtons.forEach(expandButton => {
-  expandButton.addEventListener("click", function() {
-    this.classList.toggle("rotate");
-  });
-});
-
-//hide menu when menu item clicked
-hiddenMenuItems.forEach(element => {
-  element.addEventListener("click", function() {
-    hiddenMenu.classList.remove("active");
-    hiddenMenu.classList.toggle("disabled");
-
+if (closeOrderButton)
+  closeOrderButton.addEventListener("click", function() {
+    order.classList.remove("active");
+    order.classList.add("disabled");
     document.body.style.height = "auto";
     document.body.style.overflow = "scroll";
   });
-});
+
+//menu move in effect
+if (menuButton)
+  menuButton.addEventListener("click", function() {
+    hiddenMenu.classList.add("active");
+    hiddenMenu.classList.remove("disabled");
+    document.body.style.height = "100%";
+    document.body.style.overflow = "hidden";
+  });
+
+//menu move out effect
+if (closeHiddenMenuButton)
+  closeHiddenMenuButton.addEventListener("click", function() {
+    hiddenMenu.classList.remove("active");
+    hiddenMenu.classList.add("disabled");
+    document.body.style.height = "auto";
+    document.body.style.overflow = "scroll";
+  });
+
+//rotate expand button
+if (expandButtons)
+  expandButtons.forEach(expandButton => {
+    expandButton.addEventListener("click", function() {
+      this.classList.toggle("rotate");
+    });
+  });
+
+//hide menu when menu item clicked
+if (hiddenMenuItems)
+  hiddenMenuItems.forEach(element => {
+    element.addEventListener("click", function() {
+      hiddenMenu.classList.remove("active");
+      hiddenMenu.classList.toggle("disabled");
+
+      document.body.style.height = "auto";
+      document.body.style.overflow = "scroll";
+    });
+  });
 
 // detect if clicked outside hidden objects
 document.addEventListener("click", function() {
@@ -94,16 +100,18 @@ window.addEventListener("scroll", () => {
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
   }
-
-  const scrollPosition = window.scrollY;
   const menu = document.querySelector("#menu");
-  const menuTopOffset = offset(menu).top;
 
-  if (scrollPosition >= menuTopOffset - window.innerHeight) {
-    menuButton.classList.remove("hidden");
-    basketbutton.classList.remove("hidden");
-  } else {
-    menuButton.classList.add("hidden");
-    basketbutton.classList.add("hidden");
+  if (menu) {
+    const scrollPosition = window.scrollY;
+    const menuTopOffset = offset(menu).top;
+
+    if (scrollPosition >= menuTopOffset - window.innerHeight) {
+      menuButton.classList.remove("hidden");
+      basketbutton.classList.remove("hidden");
+    } else {
+      menuButton.classList.add("hidden");
+      basketbutton.classList.add("hidden");
+    }
   }
 });
