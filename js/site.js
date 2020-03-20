@@ -13,24 +13,32 @@ let header = document.querySelector("header");
 basketbutton.addEventListener("click", function() {
   order.classList.add("active");
   order.classList.remove("disabled");
+  document.body.style.height = "100%";
+  document.body.style.overflow = "hidden";
 });
 
 //basket move out effect
 closeOrderButton.addEventListener("click", function() {
   order.classList.remove("active");
   order.classList.add("disabled");
+  document.body.style.height = "auto";
+  document.body.style.overflow = "scroll";
 });
 
 //menu move in effect
 menuButton.addEventListener("click", function() {
   hiddenMenu.classList.add("active");
   hiddenMenu.classList.remove("disabled");
+  document.body.style.height = "100%";
+  document.body.style.overflow = "hidden";
 });
 
 //menu move out effect
 closeHiddenMenuButton.addEventListener("click", function() {
   hiddenMenu.classList.remove("active");
   hiddenMenu.classList.add("disabled");
+  document.body.style.height = "auto";
+  document.body.style.overflow = "scroll";
 });
 
 //rotate expand button
@@ -45,6 +53,9 @@ hiddenMenuItems.forEach(element => {
   element.addEventListener("click", function() {
     hiddenMenu.classList.remove("active");
     hiddenMenu.classList.toggle("disabled");
+
+    document.body.style.height = "auto";
+    document.body.style.overflow = "scroll";
   });
 });
 
@@ -59,6 +70,9 @@ document.addEventListener("click", function() {
       hiddenMenu.classList.remove("active");
       hiddenMenu.classList.add("disabled");
     }
+
+    document.body.style.height = "auto";
+    document.body.style.overflow = "scroll";
   }
 });
 
