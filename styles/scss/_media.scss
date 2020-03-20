@@ -1,90 +1,93 @@
 @media (max-width: 1200px) {
-	.logo {
-		.motto {
-			font-size: 1.5rem;
-		}
-	}
+  .logo {
+    .motto {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
-	.hidden-menu a {
-		font-size: 1rem;
-	}
+  .hidden-menu a {
+    font-size: 1rem;
+  }
 
-	.hidden-menu,
-	.order.active {
-		width: 100vw;
-	}
+  .hidden-menu,
+  .order {
+    width: 100vw !important;
+  }
 
-	.confirm-order,
-	.finish {
-		header h1 {
-			font-size: 2.5rem;
-		}
+  .confirm-order,
+  .finish {
+    header h1 {
+      font-size: 2.5rem;
+    }
 
-		.form {
-			width: 100% !important;
-		}
-	}
+    .form {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-navigation a {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-	main {
-		h1 {
-			font-size: 3rem;
-		}
+  main {
+    h1 {
+      font-size: 3rem;
+    }
 
-		h2 {
-			font-size: 2rem;
-		}
-	}
+    h2 {
+      font-size: 2rem;
+    }
+  }
 
-	.promotions {
-		h1 {
-			font-size: 1.5rem;
-		}
-	}
+  .promotions {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @media (max-width: 500px) {
-	.feature {
-		h1 {
-			font-size: 2rem;
-		}
+  .feature {
+    h1 {
+      font-size: 2rem;
+    }
 
-		.feature-image {
-			width: 200px;
-			height: 200px;
-		}
-	}
+    .feature-image {
+      width: 200px;
+      height: 200px;
+    }
+  }
 
-	.main {
-		h1 {
-			font-size: 4rem;
-		}
+  .main {
+    h1 {
+      font-size: 4rem;
+    }
 
-		h2 {
-			font-size: 2rem;
-		}
+    h2 {
+      font-size: 2rem;
+    }
 
-		.product-name,
-		.product-price {
-			font-size: 1.2rem;
-		}
+    .product-name,
+    .product-price {
+      font-size: 1.2rem;
+    }
 
-		.product-ingredients {
-			font-size: 1rem;
-		}
-	}
+    .product-ingredients {
+      font-size: 1rem;
+    }
+  }
 }
 
-
-
-
 @media (max-height: 640px) {
-	footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

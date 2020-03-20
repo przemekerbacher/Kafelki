@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat&display=swap&subset=latin-ext');
-$decorative-font: 'Fjalla One',
-sans-serif;
-$normal-font: 'Montserrat',
-sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat&display=swap&subset=latin-ext");
+$decorative-font: "Fjalla One", sans-serif;
+$normal-font: "Montserrat", sans-serif;
 $text-color: #544c4c;
 $boder-color: rgb(222, 226, 230);
 $color-background: rgb(239, 238, 234);
 $color-red: red;
-$color-red-dark: rgba(0, 0, 0, .12);
+$color-red-dark: rgba(0, 0, 0, 0.12);
 $color-primary: rgb(20, 110, 45);
 $color-secondary: rgb(179, 9, 8);
 $background-image-url: url("../../images/background-image.jpg");

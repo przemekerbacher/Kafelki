@@ -1,45 +1,43 @@
-header {
-	transition: filter .3s linear;
-}
-
 .header {
-	background-image: $background-image-url;
-	background-size: cover;
-	background-position: right;
-	background-attachment: fixed;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+  transition: filter 0.3s linear;
+  background-image: $background-image-url;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
 
-	.logo {
-		padding: 30px;
+  .mask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
-		img {
-			max-height: 15vh;
-		}
-	}
+  .logo {
+    padding: 30px;
 
-	div.jumbotron .jumbotron-fluid {
-		margin: 0;
-	}
+    img {
+      max-height: 15vh;
+    }
+  }
 
-	a {
-		margin-top: 100px;
-		font-size: 3rem;
-	}
+  a {
+    margin-top: 100px;
+    font-size: 3rem;
+  }
 
-	a:hover {
-		color: $color-primary !important;
-		border-radius: 50%;
-		transition: color .5s, box-shadow .5s linear;
-	}
+  a:hover {
+    color: $color-primary !important;
+    border-radius: 50%;
+    transition: color 0.5s, box-shadow 0.5s linear;
+  }
 
-	.motto {
-		font-family: $decorative-font;
-		font-size: 3rem;
-		margin: 0;
-		max-width: 100%;
-	}
+  .motto {
+    font-family: $decorative-font;
+    font-size: 3rem;
+    margin: 0;
+    max-width: 100%;
+  }
 }

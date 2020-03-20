@@ -1,68 +1,68 @@
 .order {
-	@include hidden;
-	right: 200%;
-	box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-	color: $text-color;
-	z-index: 2;
+  @include hidden;
+  left: 150%;
+  box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  color: $text-color;
+  z-index: 2;
 
-	.order-header {
-		text-align: center;
+  .order-header {
+    text-align: center;
 
-		h2 {
-			text-transform: uppercase;
-			font-family: $normal-font;
-		}
-	}
+    h2 {
+      text-transform: uppercase;
+      font-family: $normal-font;
+    }
+  }
 
-	.order-item {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  .order-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
-		button {
-			background-color: $color-red-dark;
-			color: $text-color;
-			border-style: none;
-		}
-	}
+    button {
+      background-color: $color-red-dark;
+      color: $text-color;
+      border-style: none;
+    }
+  }
 
-	.order-footer {
-		.summary-final {
-			font-weight: bold;
-		}
-	}
+  .order-footer {
+    .summary-final {
+      font-weight: bold;
+    }
+  }
 }
 
 .order.active {
-	animation: move-from-right $animation-move-in-out;
+  animation: move-from-right $animation-move-in-out;
 }
 
 .order.disabled {
-	animation: move-out-from-left $animation-move-in-out;
+  animation: move-out-from-left $animation-move-in-out;
 }
 
 .close-order {
-	@include closeButton;
+  @include closeButton;
 }
 
 .order-footer {
-	background-color: $color-red-dark;
+  background-color: $color-red-dark;
 }
 
 @keyframes move-from-right {
-	from {
-		right: -100%;
-	}
+  from {
+    left: 150%;
+  }
 
-	to {
-		right: 0;
-	}
+  to {
+    left: 0;
+  }
 }
 
 @keyframes move-out-from-left {
-	from {
-		right: 0%;
-	}
+  from {
+    left: 0%;
+  }
 
-	to {
-		right: -100%;
-	}
+  to {
+    left: 150%;
+  }
 }

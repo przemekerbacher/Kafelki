@@ -1,40 +1,40 @@
 nav.main-navigation {
-	position: absolute;
-	top: 0;
-	left: 0;
-	color: white;
-	background: linear-gradient(rgb(0, 0, 0), transparent);
-	padding-bottom: 50px;
-	width: 100%;
-	z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: linear-gradient(rgb(0, 0, 0), transparent);
+  padding-bottom: 50px;
+  width: 100%;
+  z-index: 2;
 
-	svg {
-		color: white;
-	}
+  svg {
+    color: white;
+  }
 
-	ul {
-		cursor: pointer;
-	}
+  ul {
+    cursor: pointer;
+  }
 
-	a {
-		color: white !important;
-	}
+  a {
+    color: white !important;
+  }
 
-	a:hover {
-		color: #ddd !important;
-	}
+  a:hover {
+    color: #ddd !important;
+  }
 
-	li {
-		&:hover {
-			color: #ddd;
-		}
-	}
+  li {
+    &:hover {
+      color: #ddd;
+    }
+  }
 
-	.languages {
-		background-color: transparent;
+  .languages {
+    background-color: transparent;
 
-		a:hover {
-			background-color: transparent;
-		}
-	}
+    a:hover {
+      background-color: transparent;
+    }
+  }
 }

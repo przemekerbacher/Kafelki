@@ -1,237 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Valentino</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pizza Valentino</title>
+    <link rel="icon" href="images/ico/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/css/style.min.css" />
+  </head>
 
-	<link rel='icon' href='images/ico/favicon.ico' type='image/x-icon' />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="styles/css/style.min.css">
-</head>
+  <body>
+    <!-- nav -->
+    <nav
+      class="main-navigation navbar navbar-expand-lg navbar-light position-absolute text-center"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars display-4"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav d-flex justify-content-around w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promotions">Promocje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Zamów online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Twoje konto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Zmiana języka</a
+              >
+              <div class="dropdown-menu languages">
+                <a class="dropdown-item" href="#">Polski</a>
+                <a class="dropdown-item" href="#">English</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown-temp">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Inne podstrony</a
+              >
+              <div class="dropdown-menu languages">
+                <a class="dropdown-item" href="confirm.html"
+                  >Potwierdzenie zamówienia</a
+                >
+                <a class="dropdown-item" href="finish.html"
+                  >Zamówienie kompletne</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-	<!-- nav -->
-	<nav class="main-navigation navbar navbar-expand-lg navbar-light position-absolute">
-		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-				aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fas fa-bars display-4"></i>
-			</button>
-			<div class="collapse navbar-collapse" id="main-nav">
-				<ul class="navbar-nav d-flex justify-content-around w-100">
-					<li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
-					<li class="nav-item"><a class="nav-link" href="#promotions">Promocje</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Zamów online</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Twoje konto</a></li>
-					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-							role="button" aria-haspopup="true" aria-expanded="false">Zmiana języka</a>
-						<div class="dropdown-menu languages">
-							<a class="dropdown-item" href="#">Polski</a>
-							<a class="dropdown-item" href="#">English</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown-temp"><a class="nav-link dropdown-toggle" data-toggle="dropdown"
-							href="#" role="button" aria-haspopup="true" aria-expanded="false">Inne podstrony</a>
-						<div class="dropdown-menu languages">
-							<a class="dropdown-item" href="confirm.html">Potwierdzenie zamówienia</a>
-							<a class="dropdown-item" href="finish.html">Zamówienie kompletne</a>
-						</div>
-					</li>
+    <div class="top">
+      <!-- header -->
+      <header class="header">
+        <div class="mask">
+          <div class="text-white text-center">
+            <div class="d-flex flex-column align-items-around ">
+              <div
+                class="logo d-flex flex-column flex-lg-row align-items-center justify-content-between w-100"
+              >
+                <div class="col-4 text-lg-left">
+                  <img
+                    class="img-fluid"
+                    src="images/logo_pizza.png"
+                    alt="pizza-logo"
+                  />
+                </div>
+                <p class="motto p-3 col-4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fugiat.
+                </p>
+                <div class="col-4"></div>
+              </div>
 
-				</ul>
-			</div>
-		</div>
-	</nav>
+              <a
+                href="#featrues"
+                class="d-flex flex-column align-items-center text-white"
+                ><i class="fas fa-arrow-circle-down"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
 
-	<div class="top">
+      <!-- features -->
+      <section id="featrues" class="features">
+        <div
+          class="container d-flex text-center row mx-auto text-uppercase justify-content-center"
+        >
+          <div class="feature col-lg-4 mb-5">
+            <div class="feature-image mb-5 mx-auto">
+              <img
+                class="img-fluid"
+                src="images/features/delivery400x400.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="display-4">Dostawa do domu</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, id.
+            </p>
+          </div>
+          <div class="feature col-lg-4 mb-5">
+            <div class="feature-image mb-5 mx-auto">
+              <img
+                class="img-fluid"
+                src="images/features/oreder-online400x400.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="display-4">Zamów online</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              facere dicta! Odit.
+            </p>
+          </div>
+          <div class="feature col-lg-4 mb-5">
+            <div class="feature-image mb-5 mx-auto">
+              <img
+                class="img-fluid"
+                src="images/features/reserved400x400.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="display-4">Rezerwacja online</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              dignissimos similique?
+            </p>
+          </div>
+        </div>
+      </section>
 
-		<!-- header -->
-		<header class="jumbotron jumbotron-fluid header text-white text-center">
-			<div class="d-flex flex-column align-items-around ">
-				<div class="logo d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
-					<div class="col-4 text-lg-left">
-						<img class="img-fluid" src="images/logo_pizza.png" alt="pizza-logo" />
-					</div>
-					<p class="motto p-3 col-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat.</p>
-					<div class="col-4"></div>
-				</div>
+      <!-- about -->
+      <section class="about text-center container">
+        <h1 class="display-4 text-uppercase">o nas</h1>
+        <img
+          class="text-decoration img-fluid pb-5"
+          src="images/text-decoration-red.png"
+          alt="decoration"
+        />
+        <div class="contact">
+          <p>
+            Głogowa 10, Kołobrzeg
+          </p>
+          <p>tel. 94 35 406 40</p>
+        </div>
+        <p class="font-weight-bold">Zamowienia online: 07:00 - 23:00</p>
+        <p class="">
+          Przyjdź lub zadzwoń i zamów na wynos lub z dowozem. Restauracja czynna
+          codziennie od godz. 07 do 22. Zamówienia przyjmujemy do godz. 22.
+          Dostarczanie pizzy na terenie Kołobrzegu od 25 zł.
+        </p>
+        <p>Czas oczekiwania: 30 min.</p>
+      </section>
 
-				<a href="#featrues" class="d-flex flex-column align-items-center text-white"><i
-						class="fas fa-arrow-circle-down"></i></a>
-			</div>
-		</header>
-		<!-- </div> -->
+      <!-- main -->
+      <main class="main">
+        <div
+          id="menu"
+          class="wrap d-flex justify-content-center container flex-column"
+        >
+          <div class="text-center">
+            <h1 class="display-1 w-100">Menu</h1>
+            <img
+              class="w-50"
+              src="images/down-hand-drawn-scribble.png"
+              alt="scribble"
+            />
+          </div>
+          <div
+            class="products w-100"
+            data-spy="scroll"
+            data-target="#products-scroll-spy"
+            data-offset="0"
+          >
+            <div id="pizza" class="pizza row justify-content-center">
+              <h2 class="col-12 display-3">Pizza</h2>
+              <div class="product-wrap col-md-6 p-3">
+                <div class="product-item rounded">
+                  <div class="row align-items-center">
+                    <div class="col-3 mb-2">
+                      <img
+                        class="product-image img-thumbnail img-fluid"
+                        src="images/pizza-margherita.jpg"
+                        alt="produt-image"
+                      />
+                    </div>
+                    <div class="product-info text-color col-6">
+                      <p class="col-6 product-name">Margherita</p>
+                      <div class="product-ingredients p-0 m-0 w-100 col-12">
+                        <p>
+                          sos pomidorowy, ser
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <span class="product-price d-block text-right"
+                        >30.00 zł</span
+                      >
+                    </div>
+                  </div>
+                  <button class="product-button">Dodaj do koszyka</button>
+                  <div
+                    class="product-alergens d-flex justify-content-center flex-column"
+                  >
+                    <button
+                      id="expand-button-1"
+                      class="dropdown-toggle expand-button"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#expand-alergens-1"
+                      aria-expanded="false"
+                    ></button>
+                    <p class="collapse" id="expand-alergens-1">
+                      <strong>Alergeny:</strong>
+                      gluten, pszenica, jęczmień, owies, orkisz, kamut lub ich
+                      odmiany hybrydowe, a także produkty pochodne, Skorupiaki i
+                      produkty pochodne, Jaja i produkty pochodne,Ryby i
+                      produkty pochodne
+                    </p>
+                  </div>
+                </div>
+              </div>
+              `;
+            </div>
+            <div id="drinks" class="drinks row justify-content-center">
+              <h2 class="col-12 display-3">Drinki</h2>
+            </div>
+          </div>
+        </div>
+      </main>
 
-		<!-- features -->
-		<section id="featrues" class="features">
-			<div class="container d-flex text-center row mx-auto text-uppercase justify-content-center">
-				<div class="feature col-lg-4 mb-5">
-					<div class="feature-image mb-5 mx-auto">
-						<img class="img-fluid" src="images/features/delivery400x400.jpg" alt="">
-					</div>
-					<h1 class="display-4">Dostawa do domu</h1>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, id.</p>
-				</div>
-				<div class="feature col-lg-4 mb-5">
-					<div class="feature-image mb-5 mx-auto">
-						<img class="img-fluid" src="images/features/oreder-online400x400.jpg" alt="">
-					</div>
-					<h1 class="display-4">Zamów online</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facere dicta! Odit.</p>
-				</div>
-				<div class="feature col-lg-4 mb-5">
-					<div class="feature-image mb-5 mx-auto">
-						<img class="img-fluid" src="images/features/reserved400x400.jpg" alt="">
-					</div>
-					<h1 class="display-4">Rezerwacja online</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dignissimos similique?</p>
-				</div>
-			</div>
-		</section>
+      <!-- hidden -->
+      <div class="basket hidden">
+        <i class="fas fa-shopping-basket"></i>
+      </div>
+      <div class="menu hidden">
+        <i class="fas fa-hamburger"></i>
+      </div>
+      <div class="hidden-menu text-center">
+        <div class="blur"></div>
+        <div class="close-hidden-menu p-4">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <ul>
+          <li><a href="#pizza">Pizza</a></li>
+          <li><a href="#drinks">Drinki</a></li>
+          <li><a href="#">Cisto do pizzy</a></li>
+          <li><a href="#">Sałatki</a></li>
+          <li><a href="#">Dodatkowy sos do pizzy</a></li>
+          <li><a href="#">Zapiekanki</a></li>
+        </ul>
+      </div>
+      <div class="order py-5">
+        <div class="blur"></div>
+        <div class="close-order p-4">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="order-header">
+          <h2>Twoje zamówienie</h2>
+          <button class="order-pay-button btn btn-danger">
+            Przejdź do płatności
+          </button>
+        </div>
+        <div class="order-body">
+          <div class="order-item d-flex align-items-center p-2">
+            <div class="order-item-details col-6">
+              <p class="order-item-name m-0">Margherita</p>
+              <p class="order-item-ingredient small m-0">sos pomidorowy, ser</p>
+            </div>
+            <div class="product-item-edit col-4">
+              <button class="order-item-edit">
+                <i class="far fa-edit"></i>
+              </button>
+              <button class="order-item-delete">
+                <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+            <p class="product-item-price col-2">
+              30,00 zł
+            </p>
+          </div>
+          <div class="order-item d-flex align-items-center p-2">
+            <div class="order-item-details col-6">
+              <p class="order-item-name m-0">Rita</p>
+              <p class="order-item-ingredient small m-0">
+                sos pomidorowy, ser, pieczarki, szynka
+              </p>
+            </div>
+            <div class="product-item-edit col-4">
+              <button class="order-item-edit">
+                <i class="far fa-edit"></i>
+              </button>
+              <button class="order-item-delete">
+                <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+            <p class="product-item-price col-2">
+              62,99 zł
+            </p>
+          </div>
+        </div>
+        <div class="order-footer text-right py-1 px-5">
+          <p class="summary d-block">
+            Razem: <span class="order-value">62,99 zł</span>
+          </p>
+          <p class="summary-final d-block">
+            Razem do zapłaty: <span class="order-value">62,99 zł</span>
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<!-- about -->
-		<section class="about text-center container">
-			<h1 class="display-4 text-uppercase">o nas</h1>
-			<img class="text-decoration img-fluid pb-5" src="images/text-decoration-red.png" alt="decoration">
-			<div class="contact">
-				<p>
-					Głogowa 10, Kołobrzeg
-				</p>
-				<p>tel. 94 35 406 40</p>
-			</div>
-			<p class="font-weight-bold">Zamowienia online: 07:00 - 23:00</p>
-			<p class="">Przyjdź lub zadzwoń i zamów na wynos lub z dowozem. Restauracja czynna codziennie od godz.
-				07
-				do 22.
-				Zamówienia przyjmujemy do godz. 22. Dostarczanie pizzy na terenie Kołobrzegu od 25 zł.</p>
-			<p>Czas oczekiwania: 30 min.</p>
-		</section>
-
-		<!-- main -->
-		<main class="main">
-
-			<div id="menu" class="wrap d-flex justify-content-center container flex-column">
-				<div class="text-center">
-					<h1 class="display-1 w-100">Menu
-					</h1>
-					<img class="w-50" src="images/down-hand-drawn-scribble.png" alt="scribble">
-
-				</div>
-				<div class="products w-100" data-spy="scroll" data-target="#products-scroll-spy" data-offset="0">
-					<div id="pizza" class="pizza row justify-content-center">
-						<h2 class="col-12 display-3">Pizza</h2>
-						<!-- Inject from injectHTML.js -->
-					</div>
-					<div id="drinks" class="drinks row justify-content-center">
-						<h2 class="col-12 display-3">Drinki</h2>
-
-					</div>
-				</div>
-			</div>
-
-		</main>
-
-		<!-- hidden -->
-		<div class="basket">
-			<i class="fas fa-shopping-basket"></i>
-		</div>
-		<div class="menu">
-			<i class="fas fa-hamburger"></i>
-		</div>
-		<div class="hidden-menu text-center">
-			<div class="blur"></div>
-			<div class="close-hidden-menu p-4">
-				<i class="fas fa-times-circle"></i>
-			</div>
-			<ul>
-				<li><a href="#pizza">Pizza</a></li>
-				<li><a href="#drinks">Drinki</a></li>
-				<li><a href="#">Cisto do pizzy</a></li>
-				<li><a href="#">Sałatki</a></li>
-				<li><a href="#">Dodatkowy sos do pizzy</a></li>
-				<li><a href="#">Zapiekanki</a></li>
-			</ul>
-		</div>
-		<div class="order py-5">
-			<div class="blur"></div>
-			<div class="close-order p-4">
-				<i class="fas fa-times-circle"></i>
-			</div>
-			<div class="order-header">
-				<h2>Twoje zamówienie</h2>
-				<button class="order-pay-button btn btn-danger">Przejdź do płatności</button>
-			</div>
-			<div class="order-body">
-				<div class="order-item d-flex align-items-center p-2">
-					<div class="order-item-details col-6">
-						<p class="order-item-name m-0">Margherita</p>
-						<p class="order-item-ingredient small m-0">sos pomidorowy, ser</p>
-					</div>
-					<div class="product-item-edit col-4">
-						<button class="order-item-edit"><i class="far fa-edit"></i></button>
-						<button class="order-item-delete"><i class="fas fa-times-circle"></i></button>
-					</div>
-					<p class="product-item-price col-2">
-						30,00 zł
-					</p>
-				</div>
-				<div class="order-item d-flex align-items-center p-2">
-					<div class="order-item-details col-6">
-						<p class="order-item-name m-0">Rita</p>
-						<p class="order-item-ingredient small m-0">sos pomidorowy, ser, pieczarki, szynka</p>
-					</div>
-					<div class="product-item-edit col-4">
-						<button class="order-item-edit"><i class="far fa-edit"></i></button>
-						<button class="order-item-delete"><i class="fas fa-times-circle"></i></button>
-					</div>
-					<p class="product-item-price col-2">
-						62,99 zł
-					</p>
-
-				</div>
-			</div>
-			<div class="order-footer text-right py-1 px-5">
-				<p class="summary d-block">Razem: <span class="order-value">62,99 zł</span></p>
-				<p class="summary-final d-block">Razem do zapłaty: <span class="order-value">62,99 zł</span></p>
-			</div>
-		</div>
-	</div>
-	<!-- footer -->
-	<footer>
-		<div class="container py-5 d-flex flex-column align-items-center text-center">
-			<div class="socials display-4">
-				<a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
-				<a href="https://instagram.com"><i class="fab fa-instagram-square"></i></a>
-			</div>
-			<div class="contact">
-				<p class="phone"><i class="fas fa-phone"></i><span>94 35 406 40</span></p>
-				<p class="addresss-1"><span>Głogowa 10</span></p>
-				<p class="addresss-2"><span>78-100 Kołobrzeg</span></p>
-			</div>
-			<div class="copyrights">
-				<p>&copy; 2020 Zamow.S4HONLINE</p>
-				<p>Strona używa plików cookies - jeżeli ich nie akceptujesz zmień ustawienia przeglądarki. Używanie
-					systemu oznacza akceptację regulaminu</p>
-			</div>
-		</div>
-	</footer>
-	<script src="js/injectHTML.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="js/font-awesome-all.min.js"></script>
-	<script src="js/site.js"></script>
-</body>
-
+    <!-- footer -->
+    <footer>
+      <div
+        class="container py-5 d-flex flex-column align-items-center text-center"
+      >
+        <div class="socials display-4">
+          <a href="https://facebook.com"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://instagram.com"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+        </div>
+        <div class="contact">
+          <p class="phone">
+            <i class="fas fa-phone"></i><span>94 35 406 40</span>
+          </p>
+          <p class="addresss-1"><span>Głogowa 10</span></p>
+          <p class="addresss-2"><span>78-100 Kołobrzeg</span></p>
+        </div>
+        <div class="copyrights">
+          <p>&copy; 2020 Zamow.S4HONLINE</p>
+          <p>
+            Strona używa plików cookies - jeżeli ich nie akceptujesz zmień
+            ustawienia przeglądarki. Używanie systemu oznacza akceptację
+            regulaminu
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/font-awesome-all.min.js"></script>
+    <script src="js/site.js"></script>
+  </body>
 </html>

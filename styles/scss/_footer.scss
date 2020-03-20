@@ -1,26 +1,38 @@
 footer {
-	background-image: $background-image-url;
-	background-size: cover;
-	background-attachment: fixed;
-	color: white;
-	position: sticky;
-	z-index: -1;
-	bottom: 0;
+  background-image: $background-image-url;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: sticky;
 
+  //support IE and Edge browsers
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    position: relative;
+  }
+  @supports (-ms-accelerator: true) {
+    position: relative;
+  }
 
-	a {
-		color: white !important;
-	}
+  @supports (-ms-ime-align: auto) {
+    position: relative;
+  }
 
-	a:hover {
-		color: #ddd;
-	}
+  z-index: -1;
+  bottom: 0;
 
-	svg {
-		margin-right: 1rem;
-	}
+  a {
+    color: white !important;
+  }
 
-	.container>* {
-		margin-bottom: 2rem;
-	}
+  a:hover {
+    color: #ddd;
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+
+  .container > * {
+    margin-bottom: 2rem;
+  }
 }

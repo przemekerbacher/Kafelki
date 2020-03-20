@@ -1,68 +1,66 @@
 .hidden-menu {
-	@include hidden;
-	left: -200%;
-	box-shadow: 12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-	transition: left 0.7s;
+  @include hidden;
+  left: -200%;
+  box-shadow: 12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  transition: left 0.7s;
 
-	ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-		font-size: 2rem;
-		list-style: none;
-		padding: 0;
-	}
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 2rem;
+    list-style: none;
+    padding: 0;
+  }
 
-	li {
-		width: 100%;
-	}
+  li {
+    width: 100%;
+  }
 
-	a {
-		display: block;
-		width: 100%;
-		text-decoration: none;
-		padding: 10px 20px;
-		cursor: pointer;
-		color: $text-color;
-	}
+  a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: $text-color;
+    cursor: pointer;
+  }
 
-	a:hover {
-		background-color: $text-color;
-		color: $color-background;
-	}
-
-
+  a:hover {
+    background-color: $text-color;
+    color: $color-background;
+  }
 }
 
 .hidden-menu.active {
-	animation: move-from-left $animation-move-in-out;
+  animation: move-from-left $animation-move-in-out;
 }
 
 .hidden-menu.disabled {
-	animation: move-out-from-right $animation-move-in-out;
+  animation: move-out-from-right $animation-move-in-out;
 }
 
 .close-hidden-menu {
-	@include closeButton;
+  @include closeButton;
 }
 
 @keyframes move-from-left {
-	from {
-		left: -100%;
-	}
+  from {
+    left: -100%;
+  }
 
-	to {
-		left: 0;
-	}
+  to {
+    left: 0;
+  }
 }
 
 @keyframes move-out-from-right {
-	from {
-		left: 0%;
-	}
+  from {
+    left: 0%;
+  }
 
-	to {
-		left: -200%;
-	}
+  to {
+    left: -200%;
+  }
 }
